@@ -1,0 +1,31 @@
+legend {
+    font-size: 16px;
+    border: 1px solid black;
+    padding: 5px;
+    background-color: orange;
+    cursor: pointer;
+}			
+i {
+    color: #00ff00; // green
+}
+span.blue {
+    color: #0000ff; // blue				
+}
+span.red {
+    color: #ff0000; // red				
+}
+button#home {
+    width: 100px;
+    height: 30px;
+    margin: 10px 0 5px 15px;
+}
+button#home:hover {
+    background-color: #000;	
+    color: #fff;	
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);	
+    cursor: pointer;
+}

@@ -4,27 +4,10 @@
 <html lang="en">
 	<head>
 		<title>Booleans</title>
-		<style>			
-			legend {
-				font-size: 16px;
-				border: 1px solid black;
-				padding: 5px;
-				background-color: orange;
-				cursor: pointer;
-			}			
-			i {
-				color: #00ff00; // green
-			}
-			span.blue {
-				color: #0000ff; // blue				
-			}
-			span.red {
-				color: #ff0000; // red				
-			}
-		</style>
+		<link rel="stylesheet" type="text/css" href="styles/main.css">
 	</head>
 	<body>
-
+		<a href="home.php"><button id="home">Home</button></a>
 		<?php
 			$result1 = true;
 			$result2 = false;

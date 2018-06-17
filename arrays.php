@@ -4,26 +4,10 @@
 <html lang="en">
 	<head>
 		<title>Arrays</title>
-		<style>			
-			legend {
-				font-size: 16px;
-				border: 1px solid black;
-				padding: 5px;
-				background-color: orange;
-				cursor: pointer;
-			}			
-			i {
-				color: #00ff00; // green
-			}
-			span.blue {
-				color: #0000ff; // blue				
-			}
-			span.red {
-				color: #ff0000; // red				
-			}
-		</style>
+		<link rel="stylesheet" type="text/css" href="styles/main.css">
 	</head>
 	<body>
+	<a href="home.php"><button id="home">Home</button></a>
 		<?php		
 			$numbers = array(4,8,15,16,23,42);			
 			$mixed = array(6, "fox", "dog", array("x", "y", "z"));

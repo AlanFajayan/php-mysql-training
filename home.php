@@ -65,7 +65,7 @@
 										<li><a href="array_functions.php">Array functions</a></li>
 										<li><a href="booleans.php">Booleans</a></li>
 										<li><a href="nulls.php">NULL and empty</a></li>
-										<li><a href="casting.php">Type juggling and casting</a></li>
+										<li><a href="type_casting.php">Type juggling and casting</a></li>
 										<li><a href="constants.php">Constants</a></li>
 									</ul></code>
 								</div>

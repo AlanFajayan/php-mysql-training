@@ -4,28 +4,76 @@
 <html lang="en">
 	<head>
 		<title>NULL</title>
+		<link rel="stylesheet" type="text/css" href="styles/main.css">
 	</head>
 	<body>
-
-		<?php
+		<a href="home.php"><button id="home">Home</button></a>
+		<?php		
 			$var1 = null;
-			$var2 = "";
+			$var2 = "";		
+			$var3 = "0";		
+			echo '
+				<fieldset>
+				<legend id="legendNulls">Null and empty</legend>
+				<div id="divNulls">				
+				&emsp;<code>$var1 = null;</code><br>
+				&emsp;<code>$var2 = "";</code><br>
+				&emsp;<code>$var3 = "0";</code><br><br>
+				&emsp;<code><i>// determine if a variable has a null value</i></code><br>
+				&emsp;<code>var1 null? <span class="red">&lt;?php</span><span class="blue"> echo is_null</span>($var1); <span class="red">?&gt;</span></code><br>		
+				&emsp;<code><b>result:</b> </code>';
+			echo '<code>' . is_null($var1) . '</code><br>';
+
+			echo '				
+				&emsp;<code>var2 null? <span class="red">&lt;?php</span><span class="blue"> echo is_null</span>($var2); <span class="red">?&gt;</span></code><br>		
+				&emsp;<code><b>result:</b> </code>';
+			echo '<code>' . is_null($var2) . '</code><br>';
+
+			echo '				
+				&emsp;<code>var3 null? <span class="red">&lt;?php</span><span class="blue"> echo is_null</span>($var3); <span class="red">?&gt;</span></code><br>		
+				&emsp;<code><b>result:</b> </code>';
+			echo '<code>' . is_null($var3) . '</code><br><br>';
+			
+			echo '	
+			&emsp;<code><i>// determine if a variable\'s value is set</i></code><br>			
+				&emsp;<code>var1 is set? <span class="red">&lt;?php</span><span class="blue"> echo isset</span>($var1); <span class="red">?&gt;</span></code><br>		
+				&emsp;<code><b>result:</b> </code>';
+			echo '<code>' . isset($var1) . '</code><br>';
+
+			echo '				
+				&emsp;<code>var2 is set? <span class="red">&lt;?php</span><span class="blue"> echo isset</span>($var2); <span class="red">?&gt;</span></code><br>		
+				&emsp;<code><b>result:</b> </code>';
+			echo '<code>' . isset($var2) . '</code><br>';
+
+			echo '				
+				&emsp;<code>var3 is set? <span class="red">&lt;?php</span><span class="blue"> echo isset</span>($var3); <span class="red">?&gt;</span></code><br>		
+				&emsp;<code><b>result:</b> </code>';
+			echo '<code>' . isset($var3) . '</code><br><br>';
+
+			echo '	
+			&emsp;<code><i>// empty: "", null, 0, 0.0, "0", false, array()</i></code><br>			
+				&emsp;<code>var1 empty? <span class="red">&lt;?php</span><span class="blue"> echo empty</span>($var1); <span class="red">?&gt;</span></code><br>		
+				&emsp;<code><b>result:</b> </code>';
+			echo '<code>' . empty($var1) . '</code><br>';
+
+			echo '				
+				&emsp;<code>var2 empty? <span class="red">&lt;?php</span><span class="blue"> echo empty</span>($var2); <span class="red">?&gt;</span></code><br>		
+				&emsp;<code><b>result:</b> </code>';
+			echo '<code>' . empty($var2) . '</code><br>';
+
+			echo '				
+				&emsp;<code>var3 empty? <span class="red">&lt;?php</span><span class="blue"> echo empty</span>($var3); <span class="red">?&gt;</span></code><br>		
+				&emsp;<code><b>result:</b> </code>';
+			echo '<code>' . empty($var3) . '</code><br><br></fieldset>';		
 		?>
-		var1 null? <?php echo is_null($var1); ?><br />
-		var2 null? <?php echo is_null($var2); ?><br />
-		var3 null? <?php echo is_null($var3); ?><br />
-		<br />
-		var1 is set? <?php echo isset($var1); ?><br />
-		var2 is set? <?php echo isset($var2); ?><br />
-		var3 is set? <?php echo isset($var3); ?><br />
-		<br />
-		
-		<?php // empty: "", null, 0, 0.0, "0", false, array() ?>
-		
-		<?php $var3 = "0"; ?>
-		var1 empty? <?php echo empty($var1); ?><br />
-		var2 empty? <?php echo empty($var2); ?><br />
-		var3 empty? <?php echo empty($var3); ?><br />
-		
+
+		<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$("#legendNulls").on("click", function() {
+					$("#divNulls").slideToggle();
+				});	                			
+			});
+		</script>
 	</body>
 </html>
