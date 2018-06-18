@@ -4,43 +4,7 @@
 <html lang="en">
 	<head>
 		<title>Home</title>
-		<style>			
-			legend {
-				font-size: 16px;
-				border: 1px solid black;
-				padding: 5px;
-				background-color: orange;
-				cursor: pointer;
-			}			
-			i {
-				color: #00ff00; // green
-			}
-			span.blue {
-				color: #0000ff; // blue				
-			}
-			span.red {
-				color: #ff0000; // red				
-			}
-			div.lesson {
-				width: 400px;
-				display: inline-block;
-				float: left;
-				margin: 10px;
-				-webkit-transition: 0.2s ease-in-out;
-				-moz-transition: 0.2s ease-in-out;
-				-o-transition: 0.2s ease-in-out;
-				-ms-transition: 0.2s ease-in-out;
-				transition: 0.2s ease-in-out;
-			}
-			div.lesson:hover {
-				background-color: #dedede;		
-				-webkit-transform: scale(1.1);
-				-moz-transform: scale(1.1);
-				-o-transform: scale(1.1);
-				-ms-transform: scale(1.1);
-				transform: scale(1.1);	
-			}
-		</style>
+		<link rel="stylesheet" type="text/css" href="styles/main.css">
 	</head>
 	
 	<body>
@@ -77,8 +41,9 @@
 								<div id="divControlStructures">				
 									&emsp;<code><i>// PHP control structures - logical expressions and loops</i><br>		
 									<ul>
-										<li><a href="">Logical Expressions - If statements</a></li>
-										
+										<li><a href="logical.php">Logical Expressions - If, Else, ElseIf</a></li>
+										<li><a href="operators.php">Logical Expressions - Operators</a></li>
+										<li><a href="switch.php">Logical Expressions - Switch</a></li>
 									</ul></code>
 								</div>
 							</fieldset>
