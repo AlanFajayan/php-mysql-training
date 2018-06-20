@@ -44,6 +44,12 @@
 										<li><a href="logical.php">Logical Expressions - If, Else, ElseIf</a></li>
 										<li><a href="operators.php">Logical Expressions - Operators</a></li>
 										<li><a href="switch.php">Logical Expressions - Switch</a></li>
+										<li><a href="while_loops.php">Loops  - While</a></li>
+										<li><a href="for_loops.php">Loops  - For</a></li>
+										<li><a href="foreach_loops.php">Loops  - ForEach</a></li>
+										<li><a href="continue.php">Loops  - Continue</a></li>
+										<li><a href="break.php">Loops  - Break</a></li>
+										<li><a href="pointers.php">Loops  - Pointers</a></li>
 									</ul></code>
 								</div>
 							</fieldset>
