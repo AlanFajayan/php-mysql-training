@@ -54,6 +54,22 @@
 								</div>
 							</fieldset>
 						</div>
+						<div class="lesson">
+							<fieldset>
+								<legend id="legendFunctions">User-Defined Functions</legend>
+								<div id="divFunctions">				
+									&emsp;<code><i>// PHP user-defined functions</i><br>		
+									<ul>
+										<li><a href="functions_defining.php">Functions - Defining</a></li>
+										<li><a href="functions_arguments.php">Functions - Arguments</a></li>
+										<li><a href="functions_returnvalues.php">Functions - Return Values</a></li>
+										<li><a href="functions_multiplereturns.php">Functions - Multiple Return Values</a></li>								
+										<li><a href="functions_scope.php">Functions - Scope & Global Variables</a></li>
+										<li><a href="functions_defaults.php">Functions - Default Argument Values</a></li>
+									</ul></code>
+								</div>
+							</fieldset>
+						</div>
 					</div>
 				</fieldset>
 			';
@@ -69,8 +85,9 @@
 						$("#divDataTypes").slideToggle();
 					} else if ($(this).attr("id") === "legendControlStructures") {
 						$("#divControlStructures").slideToggle();
-					}
-					
+					}else if ($(this).attr("id") === "legendFunctions") {
+						$("#divFunctions").slideToggle();
+					}					
 				});				
 			});
 		</script>
