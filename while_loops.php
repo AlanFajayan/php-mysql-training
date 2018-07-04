@@ -28,7 +28,7 @@
 			&emsp;<code><i>// while loop</i></code><br>
             &emsp;<code>$count = 0;</code><br>
             &emsp;<code>$result = "";</code><br>				
-			&emsp;<code>Logical expression:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
+			&emsp;<code>PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
             &emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> while ($count <= 10) {<br>
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;if ($count == 5) {<br>
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result = $result . "FIVE, ";<br>
@@ -57,7 +57,7 @@
 			echo '			
             &emsp;<code>$count = 1;</code><br>
             &emsp;<code>$result1 = "' . htmlentities("<br>") . '";</code><br>				
-			&emsp;<code>Logical expression:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
+			&emsp;<code>PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
             &emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> while ($count < 20) {<br>
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;if($count % 2 == 0) {<br>
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result1 = $result1 . "{$count} is even";<br>

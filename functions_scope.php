@@ -28,7 +28,7 @@
 			<legend id="legendScope">Functions: Scope and Global Variables</legend>
 			<div id="divScope">
             &emsp;<code><i>// global vs. local scope</i></code><br> 
-            &emsp;<code> Logical expression:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
+            &emsp;<code> PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
             <span class="blue">  
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$bar = "outside";   <i>// global scope</i><br>
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;function foo() {<br>             

@@ -47,7 +47,7 @@
             &emsp;<code><i>// array pointers</i></code><br>                      
             &emsp;<code>$result = "";<br>	
             &emsp; $ages = array(4,8,15,16,23,42);<br>
-            &emsp;<code> Logical expression:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
+            &emsp;<code> PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
             <span class="blue">
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<code><i>// current: current pointer value</i></code><br>
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result = $result . "1: " . current($ages);<br>
@@ -73,7 +73,7 @@
             </span>
             &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">?&gt;</span></code><br>
 			&emsp;<code><b>result:</b> </code>';
-            echo '<code>' . $result . '</code><br><br>';
+            echo '<code>' . $result . '</code><br>';
             
             $result1 = "";
             reset($ages);
@@ -89,7 +89,7 @@
             &emsp;<code><i>// pointers in a while loop</i></code><br>                      
             &emsp;<code>$result1 = "";<br>	
             &emsp; reset($ages);<br>    
-            &emsp;<code> Logical expression:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
+            &emsp;<code> PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
             &emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> while($age = current($ages)) {<br>
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result1 = $result1 . $age . ", ";<br>
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;next($ages);<br> 

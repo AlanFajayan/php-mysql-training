@@ -21,7 +21,7 @@
 			<legend id="legendArguments">Functions: Arguments</legend>
 			<div id="divArguments">
             &emsp;<code><i>// passing an argument to a function</i></code><br> 
-            &emsp;<code> Logical expression:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
+            &emsp;<code> PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
             <span class="blue">            
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;function say_hello_to($word) {<br>             
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$return "Hello {$word}!";<br>
@@ -43,7 +43,7 @@
 			
             echo '	 
             &emsp;<code><i>// passing multiple arguments to a function</i></code><br> 
-            &emsp;<code> Logical expression:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
+            &emsp;<code> PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
             &emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> function better_hello($greeting, $target, $punct) {<br>
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;return $greeting . " " . $target . $punct;<br>             
             &emsp;&emsp;&emsp;&emsp;&emsp; }<br>  

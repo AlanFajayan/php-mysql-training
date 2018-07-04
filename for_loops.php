@@ -20,7 +20,7 @@
 			<div id="divFor">
 			&emsp;<code><i>// for loop</i></code><br>            
             &emsp;<code>$result = "";</code><br>				
-			&emsp;<code>Logical expression:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
+			&emsp;<code>PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
             &emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> for($count = 0; $count <= 10; $count++) {<br>
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result = $result . $count . ", ";<br>            
             &emsp;&emsp;&emsp;&emsp;&emsp; }<br>                       
@@ -40,7 +40,7 @@
 			
 			echo '	            
             &emsp;<code>$result1 = "' . htmlentities("<br>") . '";</code><br>				
-			&emsp;<code>Logical expression:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
+			&emsp;<code>PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
             &emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> for ($count = 20; $count > 0; $count--) {<br>
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;if ($count % 2 == 0) {<br>
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result1 = $result1 . "{$count} is even.";<br>

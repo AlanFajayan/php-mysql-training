@@ -22,7 +22,7 @@
 			<legend id="legendReturnValues">Functions: Return Values</legend>
 			<div id="divReturnValues">
             &emsp;<code><i>// returning a value from a function</i></code><br> 
-            &emsp;<code> Logical expression:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
+            &emsp;<code> PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
             <span class="blue">            
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;function add($val1, $val2) {<br>             
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$sum = $val1 + $val2;<br>
@@ -60,7 +60,7 @@
 			
             echo '	 
             &emsp;<code><i>// Chinese Zodiac as a function</i></code><br> 
-            &emsp;<code> Logical expression:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
+            &emsp;<code> PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
             &emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> function chinese_zodiac($year) {<br>
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> switch (($year - 4) % 12) {<br>
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;case  &nbsp;0: $zodiac = \'Rat\'; &emsp;&emsp;&emsp;&emsp;&emsp;break;<br>  
@@ -92,7 +92,7 @@
             $result5 =  better_hello("Hello", "John Doe", "!");
             
             echo '			
-            &emsp;<code> Logical expression:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
+            &emsp;<code> PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
             <span class="blue">            
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;function better_hello($greeting, $target, $punct) {<br>             
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;return $greeting . " " . $target . $punct;<br>            

@@ -4,6 +4,7 @@
 <html lang="en">
 	<head>
 		<title>Home</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="styles/main.css">
 	</head>
 	
@@ -12,9 +13,9 @@
 			echo '
 				<fieldset>
 					<legend id="legendPHPMySQL">PHP with MySQL Essential Training</legend>
-					<div id="divPHPMySQL">						
-						<div class="lesson">
-							<fieldset>
+					<div id="divPHPMySQL" class="row">						
+						<div class="lesson col-sm-3">
+							<fieldset class="subFieldset">
 								<legend id="legendDataTypes">Exploring Data Types</legend>
 								<div id="divDataTypes">				
 									&emsp;<code><i>// PHP data types</i><br>		
@@ -35,11 +36,11 @@
 								</div>
 							</fieldset>
 						</div>
-						<div class="lesson">
-							<fieldset>
+						<div class="lesson col-sm-3">
+							<fieldset class="subFieldset">
 								<legend id="legendControlStructures">Control Structures</legend>
 								<div id="divControlStructures">				
-									&emsp;<code><i>// PHP control structures - logical expressions and loops</i><br>		
+									&emsp;<code><i>// PHP logical expressions and loops</i><br>		
 									<ul>
 										<li><a href="logical.php">Logical Expressions - If, Else, ElseIf</a></li>
 										<li><a href="operators.php">Logical Expressions - Operators</a></li>
@@ -54,8 +55,8 @@
 								</div>
 							</fieldset>
 						</div>
-						<div class="lesson">
-							<fieldset>
+						<div class="lesson col-sm-3">
+							<fieldset class="subFieldset">
 								<legend id="legendFunctions">User-Defined Functions</legend>
 								<div id="divFunctions">				
 									&emsp;<code><i>// PHP user-defined functions</i><br>		
@@ -70,25 +71,82 @@
 								</div>
 							</fieldset>
 						</div>
+						<div class="lesson col-sm-3">
+							<fieldset class="subFieldset">
+								<legend id="legendDebugging">Debugging</legend>
+								<div id="divDebugging">				
+									&emsp;<code><i>// Debugging</i><br>		
+									<ul>
+										<li><a href="debugging.php">Debugging</a></li>
+									</ul></code>
+								</div>
+							</fieldset>
+						</div>
+						<div class="lesson col-sm-3">
+							<fieldset class="subFieldset">
+								<legend id="legendWebPages">Building Web Pages with PHP</legend>
+								<div id="divWebPages">				
+									&emsp;<code><i>// Building PHP pages</i><br>		
+									<ul>
+										<li><a href="links.php">Links and URLs</a></li>
+										<li><a href="urlencode.php">Encoding GET values</a></li>
+										<li><a href="htmlencoding.php">Encoding for HTML</a></li>
+										<li><a href="includes.php">Including and Requiring Files</a></li>
+										<li><a href="headers.php">Modifying Headers</a></li>
+										<li><a href="redirect.php">Page Redirection</a></li>
+									</ul></code>
+								</div>
+							</fieldset>
+						</div>
 					</div>
 				</fieldset>
 			';
 		?>
 		
 		<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js"></script>
 		<script>
 			$(document).ready(function() {
 				$(document).on("click", "body *", function() {	
-					if ($(this).attr("id") === "legendPHPMySQL") {
-						$("#divPHPMySQL").slideToggle();
-					} else if ($(this).attr("id") === "legendDataTypes") {
-						$("#divDataTypes").slideToggle();
-					} else if ($(this).attr("id") === "legendControlStructures") {
-						$("#divControlStructures").slideToggle();
-					}else if ($(this).attr("id") === "legendFunctions") {
-						$("#divFunctions").slideToggle();
-					}					
-				});				
+					switch($(this).attr("id")) {
+						case "legendPHPMySQL":
+							$("#divPHPMySQL").slideToggle();
+							break;
+						case "legendDataTypes":
+							changeDiv("divDataTypes",$("#divDataTypes").is(":visible"));
+							break;
+						case "legendControlStructures":
+							changeDiv("divControlStructures",$("#divControlStructures").is(":visible"));
+							break;
+						case "legendFunctions":
+							changeDiv("divFunctions",$("#divFunctions").is(":visible"));
+							break;
+						case "legendDebugging":
+							changeDiv("divDebugging",$("#divDebugging").is(":visible"));
+							break;
+						case "legendWebPages":
+							changeDiv("divWebPages",$("#divWebPages").is(":visible"));			
+					}									
+				});	
+				$(".lesson").on("mouseover", function() {					
+					$(this).find("legend").css({
+						backgroundColor: '#000',
+						color: '#fff'
+					});
+				});
+				$(".lesson").on("mouseout", function() {					
+					$(this).find("legend").css({
+						backgroundColor: 'orange',
+						color: '#000'
+					});
+				});
+
+				function changeDiv(divId,isVisible) {
+					var height = isVisible === true ? 20 : 325;
+					$("#" + divId).slideToggle();							
+					$("#" + divId).parent().animate({height:height},400);
+				}			
 			});
 		</script>
 	</body>

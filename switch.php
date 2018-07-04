@@ -35,7 +35,7 @@
 			<div id="divSwitch">
             &emsp;<code><i>// switch: test multiple values</i></code><br>        
             &emsp;<code>$a = 2;</code><br>            					
-            &emsp;<code>Logical expression:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
+            &emsp;<code>PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
             &emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> switch ($a) {<br>
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; case 0:<br>
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result = "a equals 0";<br>
@@ -79,7 +79,7 @@
             			
             echo '		            
             &emsp;<code>$year = 2018;</code><br>					
-            &emsp;<code>Logical expression:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
+            &emsp;<code>PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
             &emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> switch (($year - 4) % 12) {<br>
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;case  &nbsp;0: $zodiac = \'Rat\'; &emsp;&emsp;&emsp;&emsp;&emsp;break;<br>  
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;case  &nbsp;1: $zodiac = \'Ox\'; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;break;<br>
@@ -116,7 +116,7 @@
             echo '	
             &emsp;<code><i>// case with multiple values</i></code><br>	            
             &emsp;<code>$user_type = \'customer\';</code><br>					
-            &emsp;<code>Logical expression:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
+            &emsp;<code>PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
             &emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> switch ($user_type) {<br>
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;case \'student\':<br>
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result2 = "Welcome!";<br>

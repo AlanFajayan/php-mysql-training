@@ -21,7 +21,7 @@
 			<legend id="legendDefining">Functions: Defining</legend>
 			<div id="divDefining">
             &emsp;<code><i>// defining and calling a function</i></code><br> 
-            &emsp;<code> Logical expression:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
+            &emsp;<code> PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
             <span class="blue">            
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;function say_hello() {<br> 
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;global $result;<br>  
@@ -42,7 +42,7 @@
 			
             echo '	 
             &emsp;<code><i>// defining and calling a function with a parameter</i></code><br> 
-            &emsp;<code> Logical expression:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
+            &emsp;<code> PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
             &emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> function say_hello_to($word) {<br>
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;return "Hello {$word}!";<br>             
             &emsp;&emsp;&emsp;&emsp;&emsp; }<br>  
@@ -62,7 +62,7 @@
             
             echo '	 
             &emsp;<code><i>// calling a function before defining it</i></code><br>             
-            &emsp;<code> Logical expression:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
+            &emsp;<code> PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
             &emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> $third = say_hello_loudly();<br>
             &emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> function say_hello_loudly() {<br>
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;return "HELLO WORLD!";<br> 

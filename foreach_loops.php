@@ -22,7 +22,7 @@
             &emsp;<code><i>// foreach loop</i></code><br>  
             &emsp;<code>$ages = array(4,8,15,16,23,42);</code><br>          
             &emsp;<code>$result = "";</code><br>				
-			&emsp;<code>Logical expression:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
+			&emsp;<code>PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
             &emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> foreach ($ages as $age) {<br>
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result = $result . "Age: {$age}";<br>            
             &emsp;&emsp;&emsp;&emsp;&emsp; }<br>                       
@@ -57,7 +57,7 @@
             &emsp;&emsp;&emsp;&emsp;"state" &emsp;&emsp;&emsp;&emsp; => "CA",<br>
             &emsp;&emsp;&emsp;&emsp;"zip_code" &emsp; => "90210"<br>
             &emsp; );</code><br>			
-			&emsp;<code>Logical expression:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
+			&emsp;<code>PHP Coden:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
             &emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> foreach ($person as $attribute => $data) {<br>
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$attr_nice = ucwords(str_replace("_", " ", $attribute));<br>
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result1 = $result1 . "{$attr_nice}: {$data}";<br>                      
@@ -90,7 +90,7 @@
             &emsp;&emsp;&emsp;&emsp;"1 month of Lynda.com" => 25,<br>
             &emsp;&emsp;&emsp;&emsp;""Learning PHP" &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; => null<br>            
             &emsp; );</code><br>				
-			&emsp;<code>Logical expression:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
+			&emsp;<code>PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
             &emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> foreach ($prices as $item => $price) {<br>
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result2 = $result2 . "{$item}: ";<br>
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;if (is_int($price)) {<br> 

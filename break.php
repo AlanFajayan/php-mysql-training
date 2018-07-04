@@ -23,7 +23,7 @@
 			<div id="divBreak">
             &emsp;<code><i>// break function in a for loop</i></code><br>                      
             &emsp;<code>$result = "";</code><br>				
-			&emsp;<code>Logical expression:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
+			&emsp;<code>PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
             &emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> for ($count=0; $count <= 10; $count++) {<br>
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;if ($count == 5) {<br> 
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;break;<br>            
@@ -47,7 +47,7 @@
             echo '  
             &emsp;<code><i>// loop inside a loop with break</i></code><br>                    
             &emsp;<code>$result1 = "";<br>            				
-			&emsp;<code> Logical expression:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
+			&emsp;<code> PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
             &emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> for ($i=0; $i<=5; $i++) {<br>
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;if ($i % 2 == 0) { continue(1); }<br>
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;for ($k=0; $k<=5; $k++) {<br> 

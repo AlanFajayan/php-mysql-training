@@ -28,7 +28,7 @@
 			<legend id="legendReturnMultipleValues">Functions: Return Multiple Values</legend>
 			<div id="divReturnMultipleValues">
             &emsp;<code><i>// returning multiple values from a function using array</i></code><br> 
-            &emsp;<code> Logical expression:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
+            &emsp;<code> PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
             <span class="blue">            
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;function add_subt($val1, $val2) {<br>             
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$add = $val1 + $val2;<br>
@@ -45,7 +45,7 @@
 
             echo '			
             &emsp;<code><i>// using list with array</i></code><br> 
-            &emsp;<code> Logical expression:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
+            &emsp;<code> PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
             <span class="blue">            
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;list($add_result, $subt_result) = add_subt(20,7);<br>             
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result3 = "Add: " . $add_result;<br>

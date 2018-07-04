@@ -28,7 +28,7 @@
             &emsp;<code>$b = 3;</code><br>
             &emsp;<code>$c = 1;</code><br>
             &emsp;<code>$d = 20;</code><br>					
-            &emsp;<code>Logical expression:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
+            &emsp;<code>PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
             &emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> if ($a >= $b) || ($c >= $d) {<br>
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result = "a is larger than b OR ";<br>
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result = $result . "c is larger than d";<br>            
@@ -45,7 +45,7 @@
 			
             echo '		            
             &emsp;<code>$e = 100;</code><br>					
-            &emsp;<code>Logical expression:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
+            &emsp;<code>PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
             &emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> if (!isset($e) {<br>
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$e = 200;<br>               
             &emsp;&emsp;&emsp;&emsp;&emsp; }
@@ -62,7 +62,7 @@
 
             echo '		            
             &emsp;<code>$quantity = "";</code><br>					
-            &emsp;<code>Logical expression:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
+            &emsp;<code>PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
             &emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> if (empty($quantity) && !is_numeric($quantity)) {<br>
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result1 = "You must enter a quantity.";<br>               
             &emsp;&emsp;&emsp;&emsp;&emsp; }

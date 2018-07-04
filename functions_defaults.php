@@ -24,7 +24,7 @@
 			<legend id="legendDefaults">Functions: Default Argument Values</legend>
 			<div id="divDefaults">
             &emsp;<code><i>// setting default argument values</i></code><br> 
-            &emsp;<code> Logical expression:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
+            &emsp;<code> PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
             <span class="blue">             
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;function paint($room="office",$color="red") {<br>   
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;return "The color of the {$room} is {$color}.";<br>            

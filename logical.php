@@ -27,7 +27,7 @@
 			&emsp;<code><i>// use of if, else, & elseif</i></code><br>
             &emsp;<code>$a = 3;</code><br>
             &emsp;<code>$b = 4;</code><br>					
-            &emsp;<code>Logical expression:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
+            &emsp;<code>PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
             &emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> if ($a > $b) {<br>
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result = "a is larger than b";<br>
             &emsp;&emsp;&emsp;&emsp;&emsp; } elseif ($a < $b) {<br>
@@ -49,7 +49,7 @@
             echo '			
 			&emsp;<code><i>// only welcome new users</i></code><br>
             &emsp;<code>$new_user = true;</code><br>            					
-            &emsp;<code>Logical expression:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
+            &emsp;<code>PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
             &emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> if ($new_user) {<br>
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result1 = ';
             echo htmlentities("<h1>Welcome!</h1>");
