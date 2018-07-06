@@ -98,6 +98,23 @@
 								</div>
 							</fieldset>
 						</div>
+						<div class="lesson col-sm-3">
+							<fieldset class="subFieldset">
+								<legend id="legendForms">Working with Forms</legend>
+								<div id="divForms">				
+									&emsp;<code><i>// Forms and form data</i><br>		
+									<ul>
+										<li><a href="form.php">Building forms</a></li>
+										<li><a href="form_single.php">Single-page form processing</a></li>
+										<li><a href="validations.php">Validating form values</a></li>
+										<li><a href="false_positives.php">Problems with validation logic</a></li>
+										<li><a href="validation_errors.php">Displaying validation errors</a></li>
+										<li><a href="validation_functions.php">Custom validation functions</a></li>
+										<li><a href="form_with_validation.php">Single-page form with validation</a></li>
+									</ul></code>
+								</div>
+							</fieldset>
+						</div>
 					</div>
 				</fieldset>
 			';
@@ -126,7 +143,9 @@
 							changeDiv("divDebugging",$("#divDebugging").is(":visible"));
 							break;
 						case "legendWebPages":
-							changeDiv("divWebPages",$("#divWebPages").is(":visible"));			
+							changeDiv("divWebPages",$("#divWebPages").is(":visible"));	
+						case "legendForms":
+							changeDiv("divForms",$("#divForms").is(":visible"));		
 					}									
 				});	
 				$(".lesson").on("mouseover", function() {					
