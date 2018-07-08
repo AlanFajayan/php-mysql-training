@@ -16,15 +16,15 @@
 				<fieldset>
 				<legend id="legendVariables">Variables</legend>
 				<div id="divVariables">
-				&emsp;<code><i>// define a variable</i></code><br>
-				&emsp;<code>$var1 = 10;</code><br>
-				&emsp;<code>Variable: <span class="red">&lt;?php</span><span class="blue"> echo $var1; <span class="red">?&gt;</span></code><br>		
-				&emsp;<code><b>result:</b> </code>';
+				<code class="indent01"><i>// define a variable</i></code><br>
+				<code class="indent01">$var1 = 10;</code><br>
+				<code class="indent01">Variable: <span class="red">&lt;?php</span><span class="blue"> echo $var1; <span class="red">?&gt;</span></code><br>		
+				<code class="indent01"><b>result:</b> </code>';
 			echo '<code>' . $var1 . '</code><br><br>';
 			echo '		
-				&emsp;<code>$var2 = "Hello world";</code><br>
-				&emsp;<code>Variable: <span class="red">&lt;?php</span><span class="blue"> echo $var2; <span class="red">?&gt;</span></code><br>		
-				&emsp;<code><b>result:</b> </code>';
+				<code class="indent01">$var2 = "Hello world";</code><br>
+				<code class="indent01">Variable: <span class="red">&lt;?php</span><span class="blue"> echo $var2; <span class="red">?&gt;</span></code><br>		
+				<code class="indent01"><b>result:</b> </code>';
 			echo '<code>' . $var2 . '</code><br><br>';
 		?>
 	

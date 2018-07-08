@@ -10,7 +10,7 @@
 	    <a href="home.php"><button id="home">Home</button></a>
         <?php	            
             function paint($room="office",$color="red") {
-				return "<div style='margin-left:30px;'>" . "The color of the {$room} is {$color}.</div>";
+				return "<div class=\"px30\">" . "The color of the {$room} is {$color}.</div>";
 			}
 		
 			$result1 = paint();
@@ -23,20 +23,20 @@
 			<fieldset>
 			<legend id="legendDefaults">Functions: Default Argument Values</legend>
 			<div id="divDefaults">
-            &emsp;<code><i>// setting default argument values</i></code><br> 
-            &emsp;<code> PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
-            <span class="blue">             
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;function paint($room="office",$color="red") {<br>   
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;return "The color of the {$room} is {$color}.";<br>            
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;}<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result1 = paint();<br>	
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result2 = paint("bedroom", "blue");<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result3 = paint("bedroom", null);<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result4 = paint("bedroom");<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result5 = paint("blue");<br> 
+            <code class="indent01"><i>// setting default argument values</i></code><br> 
+			<code class="indent01">PHP Code:<br> 
+			<span class="red indent02">&lt;?php</span><br>
+            <span class="blue indent03">function paint($room="office",$color="red") {<br>   
+            <span class="indent04">return "The color of the {$room} is {$color}.";</span><br>  
+            <span class="indent03">}</span><br>
+            <span class="indent03">$result1 = paint();</span><br>	
+            <span class="indent03">$result2 = paint("bedroom", "blue");</span><br>
+            <span class="indent03">$result3 = paint("bedroom", null);</span><br>
+            <span class="indent03">$result4 = paint("bedroom");</span><br>
+            <span class="indent03">$result5 = paint("blue");</span><br> 
             </span>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">?&gt;</span></code><br>
-			&emsp;<code> <b>result:</b> </code>';
+            <span class="red indent02">?&gt;</span></code><br>
+			<code class="indent01"><b>result:</b> </code>';
             echo '<code>' . $result1 . $result2 . $result3 . $result4 . $result5 . '</code><br><br>';            
                         
 			echo '</div></fieldset>';

@@ -19,17 +19,16 @@
 			<fieldset>
 			<legend id="legendHeaders">Modifying Headers</legend>
 			<div id="divHeaders">
-            &emsp;<code><i>// headers must be the first lines of code</i></code><br> 
-            &emsp;<code> PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
-            <span class="blue">            
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;header("Content-type: text/html");<br> 
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;header("X-Powered-By: PHP/7.2.1");<br><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;print_r(headers_list());<br>
+            <code class="indent01"><i>// headers must be the first lines of code</i></code><br> 
+			<code class="indent01">PHP Code:<br>
+			<span class="red indent02">&lt;?php</span><br>
+            <span class="blue indent03">header("Content-type: text/html");<br> 
+            <span class="indent03">header("X-Powered-By: PHP/7.2.1");</span><br><br>
+            <span class="indent03">print_r(headers_list());</span><br>
             </span>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">?&gt;</span></code><br>
-			&emsp;<code><b> result:</b> </code>';
-            echo print_r(headers_list());
-            
+            <span class="red indent02">?&gt;</span></code><br>
+			<code class="indent01"><b> result:</b> </code>';
+            echo print_r(headers_list());            
 
 			echo '</div></fieldset>';
 		?>

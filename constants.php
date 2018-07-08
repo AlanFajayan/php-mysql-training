@@ -15,13 +15,13 @@
 			<fieldset>
 			<legend id="legendConstants">Constants</legend>
 			<div id="divConstants">
-			&emsp;<code><i>// define a constant</i></code><br>
-			&emsp;<code><span class="blue">define</span>("MAX_WIDTH", 980);</code><br>';
+			<code class="indent01"><i>// define a constant</i></code><br>
+			<code class="indent01"><span class="blue">define</span>("MAX_WIDTH", 980);</code><br>';
 			
 			echo '
-			&emsp;<code><i>// echo the value of the constant</i></code><br>			
-			&emsp;<code>Display value of MAX_WIDTH: <span class="red">&lt;?php</span><span class="blue"> echo </span>MAX_WIDTH; <span class="red">?&gt;</span></code><br>
-			&emsp;<code><b>result:</b> </code>';		
+			<code class="indent01"><i>// echo the value of the constant</i></code><br>			
+			<code class="indent01">Display value of MAX_WIDTH: <span class="red">&lt;?php</span><span class="blue"> echo </span>MAX_WIDTH; <span class="red">?&gt;</span></code><br>
+			<code class="indent01"><b>result:</b> </code>';		
 			echo '<code>' . MAX_WIDTH . '</code><br>';				
 			
 			echo '</div></fieldset>';

@@ -18,17 +18,17 @@
 			<fieldset>
 			<legend id="legendEncode">Encoding GET values</legend>
 			<div id="divEncode">
-            &emsp;<code><i>// using urlencode and rawurlencode functions</i></code><br> 
-            &emsp;<code> PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
-            <span class="blue">            
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$page = "William Shakespeare";<br> 
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$quote = "To be or not to be";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$link1 =  "/bio/" . rawurlencode($page) . "?quote=" . urlencode($quote);<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$link2 =  "/bio/" . urlencode($page) . "?quote=" . rawurlencode($quote);<br>            
+            <code class="indent01"><i>// using urlencode and rawurlencode functions</i></code><br> 
+			<code class="indent01">PHP Code:<br>
+			<span class="red indent02">&lt;?php</span><br>
+            <span class="blue indent03">$page = "William Shakespeare";<br> 
+            <span class="indent03">$quote = "To be or not to be";</span><br>
+            <span class="indent03">$link1 =  "/bio/" . rawurlencode($page) . "?quote=" . urlencode($quote);</span><br>
+            <span class="indent03">$link2 =  "/bio/" . urlencode($page) . "?quote=" . rawurlencode($quote);</span><br>            
             </span>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">?&gt;</span></code><br>			
-            &emsp;<code> <b>result:</b> </code><br>
-            <code><div style=\'margin-left:30px;\'>' . $link1 . '<br>' . $link2 . '</div></code><br>';
+            <span class="red indent02">?&gt;</span></code><br>			
+            <code class="indent01"><b>result:</b> </code><br>
+            <code><div class="px30">' . $link1 . '<br>' . $link2 . '</div></code><br>';
 
 			echo '</div></fieldset>';
 		?>

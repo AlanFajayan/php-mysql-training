@@ -7,6 +7,7 @@ legend {
 }	
 fieldset {
     border: 1px solid #dcdc;
+    line-height: 1.4;
 }
 fieldset.subFieldset {
     height: 325px;   
@@ -20,17 +21,17 @@ fieldset.subFieldset:hover {
     box-shadow: 0 8px 6px -6px black;     
 }
 i {
-    color: #00ff00; // green
+    color: #00ff00; /* green */
 }
 span.blue {
-    color: #0000ff; // blue				
+    color: #0000ff; /* blue	*/			
 }
 span.red {
-    color: #ff0000; // red				
+    color: #ff0000; /* red	*/			
 }
 div.lesson {
     min-width: 400px; 
-    display: inline-block;
+    /* display: inline-block; */
     float: left;
     margin: 10px;
     -webkit-transition: 0.2s ease-in-out;
@@ -61,4 +62,33 @@ button#home:hover {
     -ms-transform: scale(1.1);
     transform: scale(1.1);	
     cursor: pointer;
+}
+/* styles for individual pages */
+.indent01 {
+    margin-left: 15px;
+}
+.indent02 {
+    margin-left: 40px;
+}
+.indent03 {
+    margin-left: 65px;
+}
+.indent04 {
+    margin-left: 90px;
+}
+.indent05 {
+    margin-left: 115px;
+}
+.indent06 {
+    margin-left: 140px;
+}
+.px20 {
+    margin-left: 20px;
+}
+.px30 {
+    margin-left: 30px;
+}
+.widthFixed250 {
+    display: inline-block;
+    width: 250px;
 }

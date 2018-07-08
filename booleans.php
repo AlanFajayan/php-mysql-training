@@ -16,31 +16,31 @@
 			<fieldset>
 			<legend id="legendBooleans">Booleans</legend>
 			<div id="divBooleans">
-			&emsp;<code><i>// declare boolean variables</i></code><br>
-			&emsp;<code>$result1 = true;</code><br>
-			&emsp;<code>$result2 = false;</code><br><br>';
+			<code class="indent01"><i>// declare boolean variables</i></code><br>
+			<code class="indent01">$result1 = true;</code><br>
+			<code class="indent01">$result2 = false;</code><br><br>';
 			
 			echo '
-			&emsp;<code><i>// echo the values of the variables</i></code><br>			
-			&emsp;<code>Display value of $result1: <span class="red">&lt;?php</span><span class="blue"> echo </span>$result1; <span class="red">?&gt;</span></code><br>
-			&emsp;<code><b>result:</b> </code>';		
+			<code class="indent01"><i>// echo the values of the variables</i></code><br>			
+			<code class="indent01">Display value of $result1: <span class="red">&lt;?php</span><span class="blue"> echo </span>$result1; <span class="red">?&gt;</span></code><br>
+			<code class="indent01"><b>result:</b> </code>';		
 			echo '<code>' . $result1 . '</code><br>
-			&emsp;<code>Display value of $result2: <span class="red">&lt;?php</span><span class="blue"> echo </span>$result2; <span class="red">?&gt;</span></code><br>
-			&emsp;<code><b>result:</b> </code>';		
+			<code class="indent01">Display value of $result2: <span class="red">&lt;?php</span><span class="blue"> echo </span>$result2; <span class="red">?&gt;</span></code><br>
+			<code class="indent01"><b>result:</b> </code>';		
 			echo '<code>' . $result2 . '</code><br><br>';
 			
 			echo '
-			&emsp;<code><i>// is_bool: returns true if parameter is true or false</i></code><br>	
-			&emsp;<code><i>// is_bool(variable)</i></code><br>
-			&emsp;<code>Is result2 boolean?: <span class="red">&lt;?php</span><span class="blue"> echo is_bool</span>($result2); <span class="red">?&gt;</span></code><br>
-			&emsp;<code><b>result:</b> </code>';		
+			<code class="indent01"><i>// is_bool: returns true if parameter is true or false</i></code><br>	
+			<code class="indent01"><i>// is_bool(variable)</i></code><br>
+			<code class="indent01">Is result2 boolean?: <span class="red">&lt;?php</span><span class="blue"> echo is_bool</span>($result2); <span class="red">?&gt;</span></code><br>
+			<code class="indent01"><b>result:</b> </code>';		
 			echo '<code>' . is_bool($result2) . '</code><br><br>';
 			
 			echo '
-			&emsp;<code><i>// is_float: returns true if parameter is a decimal</i></code><br>	
-			&emsp;<code><i>// is_float(variable)</i></code><br>
-			&emsp;<code>Is 3.14 a float?: <span class="red">&lt;?php</span><span class="blue"> echo</span> if(<span class="blue">is_float</span>(3.14)){<span class="blue">echo</span> "It is a float";} <span class="red">?&gt;</span></code><br>
-			&emsp;<code><b>result:</b> </code>';
+			<code class="indent01"><i>// is_float: returns true if parameter is a decimal</i></code><br>	
+			<code class="indent01"><i>// is_float(variable)</i></code><br>
+			<code class="indent01">Is 3.14 a float?: <span class="red">&lt;?php</span><span class="blue"> echo</span> if(<span class="blue">is_float</span>(3.14)){<span class="blue">echo</span> "It is a float";} <span class="red">?&gt;</span></code><br>
+			<code class="indent01"><b>result:</b> </code>';
 			if(is_float(3.14)){echo '<code>It is a float</code><br><br>';}
 			//echo '<code>' .  . '</code><br><br>';
 			

@@ -17,31 +17,31 @@
 				<fieldset>
 				<legend id="legendStrings">Strings</legend>
 				<div id="divStrings">
-				&emsp;<code><i>// display a string literal</i></code><br>
-				&emsp;<code>Display a string literal: <span class="red">&lt;?php</span><span class="blue"> echo "Hello World"; <span class="red">?&gt;</span></code><br>
-				&emsp;<code><b>result:</b> </code>';
+				<code class="indent01"><i>// display a string literal</i></code><br>
+				<code class="indent01">Display a string literal: <span class="red">&lt;?php</span><span class="blue"> echo "Hello World"; <span class="red">?&gt;</span></code><br>
+				<code class="indent01"><b>result:</b> </code>';
 			echo '<code>' . 'Hello World' . '</code><br><br>';
 			echo '				
-				&emsp;<code><i>// assign string to a variable</i></code><br>
-				&emsp;<code>String to a variable: <span class="red">&lt;?php</span><span class="blue"> $greeting = "Hello"; <span class="red">?&gt;</span></code><br>
-				&emsp;<code>String to a variable: <span class="red">&lt;?php</span><span class="blue"> $target = "World"; <span class="red">?&gt;</span></code><br>
-				&emsp;<code>Concatenating the string variables: <span class="red">&lt;?php</span><span class="blue"> $phrase = $greeting . " " . $target; <span class="red">?&gt;</span></code><br>
-				&emsp;<code>Displaying the concatenated variable: <span class="red">&lt;?php</span><span class="blue"> echo $phrase; <span class="red">?&gt;</span></code><br>
-				&emsp;<code><b>result:</b> </code>';
+				<code class="indent01"><i>// assign string to a variable</i></code><br>
+				<code class="indent01">String to a variable: <span class="red">&lt;?php</span><span class="blue"> $greeting = "Hello"; <span class="red">?&gt;</span></code><br>
+				<code class="indent01">String to a variable: <span class="red">&lt;?php</span><span class="blue"> $target = "World"; <span class="red">?&gt;</span></code><br>
+				<code class="indent01">Concatenating the string variables: <span class="red">&lt;?php</span><span class="blue"> $phrase = $greeting . " " . $target; <span class="red">?&gt;</span></code><br>
+				<code class="indent01">Displaying the concatenated variable: <span class="red">&lt;?php</span><span class="blue"> echo $phrase; <span class="red">?&gt;</span></code><br>
+				<code class="indent01"><b>result:</b> </code>';
 			echo '<code>' . $phrase . '</code><br><br>';
 			echo '				
-				&emsp;<code><i>// double vs single quotes</i></code><br>
-				&emsp;<code>Double quotes containing variable: <span class="red">&lt;?php</span><span class="blue"> echo "$phrase Again"; <span class="red">?&gt;</span></code><br>
-				&emsp;<code><b>result:</b> </code>';
+				<code class="indent01"><i>// double vs single quotes</i></code><br>
+				<code class="indent01">Double quotes containing variable: <span class="red">&lt;?php</span><span class="blue"> echo "$phrase Again"; <span class="red">?&gt;</span></code><br>
+				<code class="indent01"><b>result:</b> </code>';
 			echo '<code>' . "$phrase Again" . '</code><br>';
 			echo '	
-				&emsp;<code>Single quotes containing variable: <span class="red">&lt;?php</span><span class="blue"> echo \'$phrase Again\'; <span class="red">?&gt;</span></code><br>
-				&emsp;<code><b>result:</b> </code>';
+				<code class="indent01">Single quotes containing variable: <span class="red">&lt;?php</span><span class="blue"> echo \'$phrase Again\'; <span class="red">?&gt;</span></code><br>
+				<code class="indent01"><b>result:</b> </code>';
 			echo '<code>' . '$phrase Again' . '</code><br><br>';
 			echo '				
-				&emsp;<code><i>// curly braces containing variable</i></code><br>
-				&emsp;<code>Curly braces containing variable: <span class="red">&lt;?php</span><span class="blue"> echo "{$phrase} Again"; <span class="red">?&gt;</span></code><br>
-				&emsp;<code><b>result:</b> </code>';
+				<code class="indent01"><i>// curly braces containing variable</i></code><br>
+				<code class="indent01">Curly braces containing variable: <span class="red">&lt;?php</span><span class="blue"> echo "{$phrase} Again"; <span class="red">?&gt;</span></code><br>
+				<code class="indent01"><b>result:</b> </code>';
 			echo '<code>' . "{$phrase} Again" . '</code><br><br>';
 			
 		?>

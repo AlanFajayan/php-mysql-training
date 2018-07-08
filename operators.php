@@ -22,20 +22,21 @@
 			<fieldset>
 			<legend id="legendOperators">Comparison and Logical Operators</legend>
 			<div id="divOperators">
-            &emsp;<code><i>// comparison: ==,===,>,<,<=,>=</i></code><br>
-            &emsp;<code><i>// logical: &&,||,!,empty,is_numeric</i></code><br>
-            &emsp;<code>$a = 4;</code><br>
-            &emsp;<code>$b = 3;</code><br>
-            &emsp;<code>$c = 1;</code><br>
-            &emsp;<code>$d = 20;</code><br>					
-            &emsp;<code>PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> if ($a >= $b) || ($c >= $d) {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result = "a is larger than b OR ";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result = $result . "c is larger than d";<br>            
-            &emsp;&emsp;&emsp;&emsp;&emsp; }
-            </span>
-            <br>&emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">?&gt;</span></code><br>
-			&emsp;<code><b>result:</b> </code>';
+            <code class="indent01"><i>// comparison: ==,===,>,<,<=,>=</i></code><br>
+            <code class="indent01"><i>// logical: &&,||,!,empty,is_numeric</i></code><br>
+            <code class="indent01">$a = 4;</code><br>
+            <code class="indent01">$b = 3;</code><br>
+            <code class="indent01">$c = 1;</code><br>
+            <code class="indent01">$d = 20;</code><br>					
+            <code class="indent01">PHP Code:<br> 
+            <span class="red indent02">&lt;?php</span><br>
+            <span class="blue indent03"> if ($a >= $b) || ($c >= $d) {<br>
+            <span class="indent04">$result = "a is larger than b OR ";</span><br>
+            <span class="indent04">$result = $result . "c is larger than d";</span><br>            
+            <span class="indent03"> }</span>
+            </span><br>
+            <span class="red indent02">?&gt;</span></code><br>
+			<code class="indent01"><b>result:</b> </code>';
             echo '<code>' . $result . '</code><br><br>';
 
             $e = 100;
@@ -44,14 +45,15 @@
 			}
 			
             echo '		            
-            &emsp;<code>$e = 100;</code><br>					
-            &emsp;<code>PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> if (!isset($e) {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$e = 200;<br>               
-            &emsp;&emsp;&emsp;&emsp;&emsp; }
-            </span>
-            <br>&emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">?&gt;</span></code><br>
-			&emsp;<code><b>result:</b> </code>';
+            <code class="indent01">$e = 100;</code><br>					
+            <code class="indent01">PHP Code:<br> 
+            <span class="red indent02">&lt;?php</span><br>
+            <span class="blue indent03"> if (!isset($e) {<br>
+            <span class="indent04">$e = 200;</span><br>               
+            <span class="indent03"> }</span>
+            </span><br>
+            <span class="red indent02">?&gt;</span></code><br>
+			<code class="indent01"><b>result:</b> </code>';
             echo '<code>' . $e . '</code><br><br>';
 
             // don't reject 0 or 0.0
@@ -61,13 +63,14 @@
 			}
 
             echo '		            
-            &emsp;<code>$quantity = "";</code><br>					
-            &emsp;<code>PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> if (empty($quantity) && !is_numeric($quantity)) {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result1 = "You must enter a quantity.";<br>               
-            &emsp;&emsp;&emsp;&emsp;&emsp; }
-            </span>
-            <br>&emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">?&gt;</span></code><br>
+            <code class="indent01">$quantity = "";</code><br>					
+            <code class="indent01">PHP Code:<br> 
+            <span class="red indent02">&lt;?php</span><br>
+            <span class="blue indent03"> if (empty($quantity) && !is_numeric($quantity)) {<br>
+            <span class="indent04">$result1 = "You must enter a quantity.";</span><br>
+            <span class="indent03"> }</span>
+            </span><br>
+            <span class="red indent02">?&gt;</span></code><br>
 			&emsp;<code><b>result:</b> </code>';
             echo '<code>' . $result1 . '</code><br><br>';
 

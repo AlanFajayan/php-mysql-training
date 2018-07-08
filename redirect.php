@@ -14,21 +14,21 @@
 			<fieldset>
 			<legend id="legendRedirect">Page Redirection</legend>
 			<div id="divRedirect">
-            &emsp;<code><i>// PHP page redirect</i></code><br> 
-            &emsp;<code> PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
-            <span class="blue">            
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;function redirect_to($new_location) {<br> 
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;header("Location: " . $new_location);<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;exit;<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;}<br><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$logged_in = $_GET[\'logged_in\'];<br> 
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;if ($logged_in == "1") {<br> 
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;redirect_to("basic.html");<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;} else {<br> 
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;redirect_to("http://www.lynda.com");<br> 
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;}<br>       
+            <code class="indent01"><i>// PHP page redirect</i></code><br> 
+			&emsp;<code> PHP Code:<br>
+			<span class="red indent02">&lt;?php</span><br>
+            <span class="blue indent03">function redirect_to($new_location) {<br> 
+            <span class="indent04">header("Location: " . $new_location);</span><br>
+            <span class="indent04">exit;</span><br>
+            <span class="indent03">}</span><br><br>
+            <span class="indent03">$logged_in = $_GET[\'logged_in\'];</span><br> 
+            <span class="indent03">if ($logged_in == "1") {</span><br> 
+			<span class="indent04">redirect_to("basic.html");</span><br>
+            <span class="indent03">} else {</span><br> 
+			<span class="indent04">redirect_to("http://www.lynda.com");</span><br> 
+            <span class="indent03">}</span><br>       
             </span>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">?&gt;</span></code><br>';
+            <span class="red indent02">?&gt;</span></code><br>';
 
 			echo '</div></fieldset>';
 		?>

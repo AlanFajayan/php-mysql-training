@@ -27,32 +27,32 @@
 			<fieldset>
 			<legend id="legendReturnMultipleValues">Functions: Return Multiple Values</legend>
 			<div id="divReturnMultipleValues">
-            &emsp;<code><i>// returning multiple values from a function using array</i></code><br> 
-            &emsp;<code> PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
-            <span class="blue">            
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;function add_subt($val1, $val2) {<br>             
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$add = $val1 + $val2;<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$subt = $val1 - $val2;<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;return array($add, $subt);<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;}<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result_array = add_subt(10,5);<br>	
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result1 =  "Add: " . $result_array[0];<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result2 =  "Subt: " . $result_array[1];<br> 
+            <code class="indent01"><i>// returning multiple values from a function using array</i></code><br> 
+            <code class="indent01">PHP Code:<br> 
+            <span class="red indent02">&lt;?php</span><br>
+            <span class="blue indent03">function add_subt($val1, $val2) {<br>             
+            <span class="indent04">$add = $val1 + $val2;</span><br>
+            <span class="indent04">$subt = $val1 - $val2;</span><br>
+            <span class="indent04">return array($add, $subt);</span><br>
+            <span class="indent03">}</span><br>
+            <span class="indent03">$result_array = add_subt(10,5);</span><br>	
+            <span class="indent03">$result1 =  "Add: " . $result_array[0];</span><br>
+            <span class="indent03">$result2 =  "Subt: " . $result_array[1];</span><br> 
             </span>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">?&gt;</span></code><br>
-			&emsp;<code> <b>result:</b> </code>';
+            <span class="red indent02">?&gt;</span></code><br>
+			<code class="indent01"><b>result:</b> </code>';
             echo '<code>' . $result1 . ', ' . $result2 . '</code><br><br>';
 
             echo '			
-            &emsp;<code><i>// using list with array</i></code><br> 
-            &emsp;<code> PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
-            <span class="blue">            
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;list($add_result, $subt_result) = add_subt(20,7);<br>             
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result3 = "Add: " . $add_result;<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result4 = "Subt: " . $subt_result;<br>            
+            <code class="indent01"><i>// using list with array</i></code><br> 
+            <code class="indent01">PHP Code:<br> 
+            <span class="red indent02">&lt;?php</span><br>
+            <span class="blue indent03">list($add_result, $subt_result) = add_subt(20,7);<br> 
+            <span class="indent03">$result3 = "Add: " . $add_result;</span><br>
+            <code class="indent03">$result4 = "Subt: " . $subt_result;</span><br>            
             </span>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">?&gt;</span></code><br>
-			&emsp;<code> <b>result:</b> </code>';
+            <span class="red indent02">?&gt;</span></code><br>
+			<code class="indent01"><b>result:</b> </code>';
             echo '<code>' . $result3 . ', ' . $result4 . '</code><br><br>';
                         
 			echo '</div></fieldset>';

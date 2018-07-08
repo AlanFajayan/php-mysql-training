@@ -14,30 +14,27 @@
 			<fieldset>
 			<legend id="legendIncludes">Including and Requiring Files</legend>
 			<div id="divIncludes">
-            &emsp;<code><i>// using include, require, include_once, require_once</i></code><br> 
-            &emsp;<code> PHP Code:<br> 
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
-            <span class="blue">            
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;include("included_functions.php");<br> 
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;include("included_header.php");<br>
+            <code class="indent01"><i>// using include, require, include_once, require_once</i></code><br> 
+            <code class="indent01">PHP Code:<br> 
+            <span class="red indent02">&lt;?php</span><br>
+            <span class="blue indent03">include("included_functions.php");<br> 
+            <span class="indent03">include("included_header.php");</span><br>
             </span>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">?&gt;</span></code><br><br>
-            &emsp;<code> Contents of \'included_functions.php\':<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
-            <span class="blue">            
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;function hello($name) {<br> 
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;return "Hello {$name}!";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;}<br>
+            <span class="red indent02">?&gt;</span></code><br><br>
+            <code class="indent01">Contents of \'included_functions.php\':<br>
+            <span class="red indent02">&lt;?php</span><br>
+            <span class="blue indent03">function hello($name) {<br> 
+            <span class="indent04">return "Hello {$name}!";</span><br>
+            <span class="indent03">}</span><br>
             </span>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">?&gt;</span></code><br><br>           
-            &emsp;<code> Contents of \'included_header.php\':<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
-            <span class="blue">            
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;' . htmlentities('<head>') . '<br> 
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;' . htmlentities('<title>') . 'Includes' . htmlentities('</title>') . ';<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;' . htmlentities('</head>') . '<br>
+            <span class="red indent02">?&gt;</span></code><br><br>           
+            <code class="indent01">Contents of \'included_header.php\':<br>
+            <span class="red indent02">&lt;?php</span><br>
+            <span class="blue indent03">' . htmlentities('<head>') . '<br> 
+            <span class="indent04">' . htmlentities('<title>') . 'Includes' . htmlentities('</title>') . ';<br>
+            <span class="indent03">' . htmlentities('</head>') . '<br>
             </span>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">?&gt;</span></code><br><br>
+            <span class="red indent02">?&gt;</span></code><br><br>
             ';
 
 

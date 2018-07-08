@@ -11,7 +11,7 @@
         <?php	            
             function say_hello() {
                 global $result;
-                $result = "<div style='margin-left:30px;'>" . "Hello World!" . "</div>";
+                $result = "<div class=\"px30\">" . "Hello World!" . "</div>";
 			}
 		
 			say_hello();			
@@ -20,56 +20,56 @@
 			<fieldset>
 			<legend id="legendDefining">Functions: Defining</legend>
 			<div id="divDefining">
-            &emsp;<code><i>// defining and calling a function</i></code><br> 
-            &emsp;<code> PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
+            <code class="indent01"><i>// defining and calling a function</i></code><br> 
+            <code class="indent01">PHP Code:<br>
+            <span class="red indent02">&lt;?php</span><br>
             <span class="blue">            
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;function say_hello() {<br> 
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;global $result;<br>  
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result = "Hello World!";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;}<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;say_hello();<br>	                     
+            <span class="indent03">function say_hello() {</span><br> 
+            <span class="indent04">global $result;</span><br>  
+            <span class="indent04">$result = "Hello World!";</span><br>
+            <span class="indent03">}</span><br>
+            <span class="indent03">say_hello();</span><br>	                     
             </span>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">?&gt;</span></code><br>
-			&emsp;<code> <b>result:</b> </code>';
+            <span class="red indent02">?&gt;</span></code><br>
+			<code class="indent01"><b>result:</b> </code>';
             echo '<code>' . $result . '</code><br>';
             
             function say_hello_to($word) {
-                return "<div style='margin-left:30px;'>Hello {$word}!</div>";
+                return "<div class=\"px30\">>Hello {$word}!</div>";
 			}
 
 			$first = say_hello_to("World");
 			$second = say_hello_to("Everyone");
 			
             echo '	 
-            &emsp;<code><i>// defining and calling a function with a parameter</i></code><br> 
-            &emsp;<code> PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> function say_hello_to($word) {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;return "Hello {$word}!";<br>             
-            &emsp;&emsp;&emsp;&emsp;&emsp; }<br>  
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> $first = say_hello_to("World");<br>
-            </span>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> $second = say_hello_to("Everyone");<br>
-            </span>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">?&gt;</span></code><br>
-			&emsp;<code><b> result:</b> </code><br>';
+            <code class="indent01"><i>// defining and calling a function with a parameter</i></code><br> 
+            <code class="indent01">PHP Code:<br> 
+            <span class="red indent02">&lt;?php</span><br>
+            <span class="blue indent03"> function say_hello_to($word) {<br>
+            <span class="indent04">return "Hello {$word}!";</span><br>             
+            <span class="indent03">}</span><br>  
+            <span class="indent03">$first = say_hello_to("World");</span><br>            
+            <span class="indent03">$second = say_hello_to("Everyone");</span><br>            
+            <span class="red indent02">?&gt;</span></code><br></span>
+			<code class="indent01"><b> result:</b> </code><br>';
             echo '<code>' . $first . $second . '</code><br>';  
             
             $third = say_hello_loudly();
 			
 			function say_hello_loudly() {
-				return "<div style='margin-left:30px;'>HELLO WORLD!</div>";
+				return "<div class=\"px30\">>HELLO WORLD!</div>";
             }
             
             echo '	 
-            &emsp;<code><i>// calling a function before defining it</i></code><br>             
-            &emsp;<code> PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> $third = say_hello_loudly();<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> function say_hello_loudly() {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;return "HELLO WORLD!";<br> 
-            &emsp;&emsp;&emsp;&emsp;&emsp; }<br> 
-            </span>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">?&gt;</span></code><br>
-			&emsp;<code><b> result:</b> </code><br>';
+            <code class="indent01"><i>// calling a function before defining it</i></code><br> 
+            <code class="indent01">PHP Code:<br>
+            <span class="red indent02">&lt;?php</span><br>
+            <span class="blue indent03">$third = say_hello_loudly();<br>
+            <span class="indent03">function say_hello_loudly() {</span><br>
+            <span class="indent04">return "HELLO WORLD!";</span><br> 
+            <span class="indent03">}</span><br> </span>
+            <span class="red indent02">?&gt;</span></code><br>
+			<code class="indent01"><b> result:</b> </code><br>';
             echo '<code>' . $third . '</code><br><br>';
 
 			echo '</div></fieldset>';

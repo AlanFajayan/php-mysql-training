@@ -19,16 +19,17 @@
 			<fieldset>
 			<legend id="legendForEach">Loops: ForEach</legend>
 			<div id="divForEach">
-            &emsp;<code><i>// foreach loop</i></code><br>  
-            &emsp;<code>$ages = array(4,8,15,16,23,42);</code><br>          
-            &emsp;<code>$result = "";</code><br>				
-			&emsp;<code>PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> foreach ($ages as $age) {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result = $result . "Age: {$age}";<br>            
-            &emsp;&emsp;&emsp;&emsp;&emsp; }<br>                       
+            <code class="indent01"><i>// foreach loop</i></code><br>  
+            <code class="indent01">$ages = array(4,8,15,16,23,42);</code><br>          
+            <code class="indent01">$result = "";</code><br>				
+            <code class="indent01">PHP Code:<br>
+            <span class="red indent02">&lt;?php</span><br>
+            <span class="blue indent03"> foreach ($ages as $age) {<br>
+            <span class="indent04">$result = $result . "Age: {$age}";</span><br>            
+            <span class="indent03">}</span><br>                       
             </span>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">?&gt;</span></code><br>
-			&emsp;<code><b>result:</b> </code>';
+            <span class="red indent02">?&gt;</span></code><br>
+			<code class="indent01"><b>result:</b> </code>';
             echo '<code>' . $result . '</code><br><br>';
             
             $result1 = "";
@@ -43,28 +44,29 @@
 
             foreach ($person as $attribute => $data) {
                 $attr_nice = ucwords(str_replace("_", " ", $attribute));
-                $result1 = $result1 . "<div style='margin-left:30px;'>{$attr_nice}: {$data}</div>";
+                $result1 = $result1 . "<div class=\"px30\">{$attr_nice}: {$data}</div>";
             }
 			
             echo '	  
-            &emsp;<code><i>// foreach using assoc. array</i></code><br>           
-            &emsp;<code>$result1 = "";<br>	
-            &emsp; $person = array(<br>
-            &emsp;&emsp;&emsp;&emsp;"first_name" => "Kevin",<br>
-            &emsp;&emsp;&emsp;&emsp;"last_name" &emsp;=> "Skoglund",<br>
-            &emsp;&emsp;&emsp;&emsp;"address" &emsp;&emsp; => "123 Main Street",<br>
-            &emsp;&emsp;&emsp;&emsp;"city" &emsp;&emsp;&emsp;&emsp;&emsp; => "Beverly Hills",<br>
-            &emsp;&emsp;&emsp;&emsp;"state" &emsp;&emsp;&emsp;&emsp; => "CA",<br>
-            &emsp;&emsp;&emsp;&emsp;"zip_code" &emsp; => "90210"<br>
-            &emsp; );</code><br>			
-			&emsp;<code>PHP Coden:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> foreach ($person as $attribute => $data) {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$attr_nice = ucwords(str_replace("_", " ", $attribute));<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result1 = $result1 . "{$attr_nice}: {$data}";<br>                      
-            &emsp;&emsp;&emsp;&emsp;&emsp; }<br>                       
+            <code class="indent01"><i>// foreach using assoc. array</i></code><br>           
+            <code class="indent01">$result1 = "";</code><br>	
+            <code class="indent01">$person = array(</code><br>
+            <code class="indent02">"first_name" => "Kevin",</code><br>
+            <code class="indent02">"last_name" &emsp;=> "Skoglund",</code><br>
+            <code class="indent02">"address" &emsp;&emsp; => "123 Main Street",</code><br>
+            <code class="indent02">"city" &emsp;&emsp;&emsp;&emsp;&emsp; => "Beverly Hills",</code><br>
+            <code class="indent02">"state" &emsp;&emsp;&emsp;&emsp; => "CA",</code><br>
+            <code class="indent02">"zip_code" &emsp; => "90210"</code><br>
+            <code class="indent01">);</code><br>			
+            <code class="indent01">PHP Coden:<br> 
+            <span class="red indent02">&lt;?php</span><br>
+            <span class="blue indent03"> foreach ($person as $attribute => $data) {<br>
+            <span class="indent04">$attr_nice = ucwords(str_replace("_", " ", $attribute));</span><br>
+            <span class="indent04">$result1 = $result1 . "{$attr_nice}: {$data}";</span><br> 
+            <span class="indent03">}</span><br>                       
             </span>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">?&gt;</span></code><br>
-			&emsp;<code><b>result:</b> </code>';
+            <span class="red indent02">?&gt;</span></code><br>
+			<code class="indent01"><b>result:</b> </code>';
             echo '<code>' . $result1 . '</code><br><br>';
             
             $result2 = "";
@@ -75,7 +77,7 @@
             );
 
             foreach ($prices as $item => $price) {
-                $result2 = $result2 . "<div style='margin-left:30px;'>{$item}: ";
+                $result2 = $result2 . "<div class=\"px30\">{$item}: ";
                 if (is_int($price)) {
                     $result2 = $result2 . "$" . $price . "</div>";
                 } else {
@@ -84,24 +86,25 @@
             }
             
             echo '                     
-            &emsp;<code>$result2 = "";<br>	
-            &emsp; $prices = array(<br>
-            &emsp;&emsp;&emsp;&emsp;"Brand New Computer" &emsp; => 2000,<br>
-            &emsp;&emsp;&emsp;&emsp;"1 month of Lynda.com" => 25,<br>
-            &emsp;&emsp;&emsp;&emsp;""Learning PHP" &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; => null<br>            
-            &emsp; );</code><br>				
-			&emsp;<code>PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> foreach ($prices as $item => $price) {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result2 = $result2 . "{$item}: ";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;if (is_int($price)) {<br> 
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result2 = $result2 . "$" . $price;<br>  
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;} else {<br>   
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result2 = $result2 . "priceless";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; }<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp; }<br>
+            <code class="indent01">$result2 = "";</code><br>	
+            <code class="indent01">prices = array(</code><br>
+            <code class="indent02">"Brand New Computer" &emsp; => 2000,</code><br>
+            <code class="indent02">"1 month of Lynda.com" => 25,</code><br>
+            <code class="indent02">"Learning PHP" &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; => null</code><br>            
+            <code class="indent01">);</code><br>				
+            <code class="indent01">PHP Code:<br> 
+            <span class="red indent02">&lt;?php</span><br>
+            <span class="blue indent03"> foreach ($prices as $item => $price) {<br>
+            <span class="indent04">$result2 = $result2 . "{$item}: ";</span><br>
+            <span class="indent04">if (is_int($price)) {</span><br> 
+            <span class="indent05">$result2 = $result2 . "$" . $price;</span><br>  
+            <span class="indent04">} else {</span><br>   
+            <span class="indent05">$result2 = $result2 . "priceless";</span><br>
+            <span class="indent04">}</span><br>
+            <span class="indent03">}</span><br>
             </span>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">?&gt;</span></code><br>
-			&emsp;<code><b>result:</b> </code>';
+            <span class="red indent02">?&gt;</span></code><br>
+			<code class="indent01"><b>result:</b> </code>';
             echo '<code>' . $result2 . '</code><br><br>';
 
 			echo '</div></fieldset>';

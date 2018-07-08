@@ -115,6 +115,18 @@
 								</div>
 							</fieldset>
 						</div>
+						<div class="lesson col-sm-3">
+							<fieldset class="subFieldset">
+								<legend id="legendCookies">Working with Cookies and Sessions</legend>
+								<div id="divCookies">				
+									&emsp;<code><i>// Cookies and sessions</i><br>		
+									<ul>
+										<li><a href="cookies.php">Setting, reading, & unsetting cookie values</a></li>
+										<li><a href="sessions.php">Working with sessions</a></li>
+									</ul></code>
+								</div>
+							</fieldset>
+						</div>
 					</div>
 				</fieldset>
 			';
@@ -145,7 +157,9 @@
 						case "legendWebPages":
 							changeDiv("divWebPages",$("#divWebPages").is(":visible"));	
 						case "legendForms":
-							changeDiv("divForms",$("#divForms").is(":visible"));		
+							changeDiv("divForms",$("#divForms").is(":visible"));	
+						case "legendCookies":
+							changeDiv("divCookies",$("#divCookies").is(":visible"));	
 					}									
 				});	
 				$(".lesson").on("mouseover", function() {					

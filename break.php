@@ -21,17 +21,18 @@
 			<fieldset>
 			<legend id="legendBreak">Loops: Break</legend>
 			<div id="divBreak">
-            &emsp;<code><i>// break function in a for loop</i></code><br>                      
-            &emsp;<code>$result = "";</code><br>				
-			&emsp;<code>PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> for ($count=0; $count <= 10; $count++) {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;if ($count == 5) {<br> 
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;break;<br>            
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; }<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; $result = $result . $count . ", ";<br> 
-            &emsp;&emsp;&emsp;&emsp;&emsp; }<br>                
+            <code class="indent01"><i>// break function in a for loop</i></code><br>
+            <code class="indent01">$result = "";</code><br>				
+			<code class="indent01">PHP Code:<br>
+			<span class="red indent02">&lt;?php</span><br>
+            <span class="blue indent03"> for ($count=0; $count <= 10; $count++) {<br>
+            <span class="indent04">if ($count == 5) {</span><br> 
+            <span class="indent05">break;</span><br>            
+            <span class="indent04">}</span><br>
+            <span class="indent04">$result = $result . $count . ", ";</span><br> 
+            <span class="indent03">}</span><br>                
             </span>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">?&gt;</span></code><br>
+            <span class="red indent02">?&gt;</span></code><br>
 			&emsp;<code><b>result:</b> </code>';
             echo '<code>' . $result . '</code><br><br>';            
             
@@ -45,19 +46,20 @@
 			}
             
             echo '  
-            &emsp;<code><i>// loop inside a loop with break</i></code><br>                    
-            &emsp;<code>$result1 = "";<br>            				
-			&emsp;<code> PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> for ($i=0; $i<=5; $i++) {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;if ($i % 2 == 0) { continue(1); }<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;for ($k=0; $k<=5; $k++) {<br> 
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;if ($k == 3) { break(2); }<br>  
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result1 = $result1 . $i . "-" . $k;<br>               
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; }<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp; }<br>
+            <code class="indent01"><i>// loop inside a loop with break</i></code><br> 
+            <code class="indent01">$result1 = "";<br>            				
+			<code class="indent01">PHP Code:<br> 
+			<span class="red indent02">&lt;?php</span><br>
+            <span class="blue indent03"> for ($i=0; $i<=5; $i++) {<br>
+            <span class="indent04">if ($i % 2 == 0) { continue(1); }</span><br>
+            <span class="indent04">for ($k=0; $k<=5; $k++) {</span><br> 
+            <span class="indent05">if ($k == 3) { break(2); }</span><br>  
+            <span class="indent05">$result1 = $result1 . $i . "-" . $k;</span><br>               
+            <span class="indent04">}</span><br>
+            <span class="indent03">}</span><br>
             </span>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">?&gt;</span></code><br>
-			&emsp;<code><b> result:</b> </code>';
+            <span class="red indent02">?&gt;</span></code><br>
+			<code class="indent01"><b> result:</b> </code>';
             echo '<code>' . $result1 . '</code><br><br>';
 
 			echo '</div></fieldset>';

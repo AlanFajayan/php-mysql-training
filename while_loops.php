@@ -25,50 +25,52 @@
 			<fieldset>
 			<legend id="legendWhile">Loops: While</legend>
 			<div id="divWhile">
-			&emsp;<code><i>// while loop</i></code><br>
-            &emsp;<code>$count = 0;</code><br>
-            &emsp;<code>$result = "";</code><br>				
-			&emsp;<code>PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> while ($count <= 10) {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;if ($count == 5) {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result = $result . "FIVE, ";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; } else {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result = $result . $count . ", ";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; }<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; $count++;<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp; }<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp; $output = "Count: {$result}";<br>            
+			<code class="indent01"><i>// while loop</i></code><br>
+            <code class="indent01">$count = 0;</code><br>
+            <code class="indent01">$result = "";</code><br>				
+			<code class="indent01">PHP Code:<br> 
+			<span class="red indent02">&lt;?php</span><br>
+            <span class="blue indent03"> while ($count <= 10) {<br>
+            <span class="indent04">if ($count == 5) {</span><br>
+            <span class="indent05">$result = $result . "FIVE, ";</span><br>
+            <span class="indent04">} else {</span><br>
+			<span class="indent05">$result = $result . $count . ", ";</span><br>
+            <span class="indent04">}</span><br>
+            <span class="indent04">$count++;</span><br>
+            <span class="indent03">}</span><br>
+            <span class="indent03">$output = "Count: {$result}";</span><br>            
             </span>
             &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">?&gt;</span></code><br>
-			&emsp;<code><b>result:</b> </code>';
+			<code class="indent01"><b>result:</b> </code>';
             echo '<code>' . $output . '</code><br><br>';
             
             $count = 1;
             $result1 = "<br>";
 			while ($count < 20) {
 				if($count % 2 == 0) {
-					$result1 = $result1 . "<div style='margin-left: 30px;'>{$count} is even</div>";
+					$result1 = $result1 . "<div class=\"px30\">{$count} is even</div>";
 				} else {
-					$result1 = $result1 . "<div style='margin-left: 30px;'>{$count} is odd</div>";
+					$result1 = $result1 . "<div class=\"px30\">{$count} is odd</div>";
 				}
 				$count++;
 			}
 			
 			echo '			
-            &emsp;<code>$count = 1;</code><br>
-            &emsp;<code>$result1 = "' . htmlentities("<br>") . '";</code><br>				
-			&emsp;<code>PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> while ($count < 20) {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;if($count % 2 == 0) {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result1 = $result1 . "{$count} is even";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; } else {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result1 = $result1 . "{$count} is odd";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; }<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; $count++;<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp; }<br>                       
+            <code class="indent01">$count = 1;</code><br>
+            <code class="indent01">$result1 = "' . htmlentities("<br>") . '";</code><br>	
+			<code class="indent01">PHP Code:<br> 
+			<span class="red indent02">&lt;?php</span><br>
+            <span class="blue indent03"> while ($count < 20) {<br>
+            <span class="indent04">if($count % 2 == 0) {</span><br>
+			<span class="indent05">$result1 = $result1 . "{$count} is even";</span><br>
+            <span class="indent04">} else {</span><br>
+			<span class="indent05">$result1 = $result1 . "{$count} is odd";</span><br>
+            <span class="indent04">}</span><br>
+            <span class="indent04">$count++;</span><br>
+            <span class="indent03">}</span><br>                       
             </span>
             &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">?&gt;</span></code><br>
-			&emsp;<code><b>result:</b> </code>';
+			<code class="indent01"><b>result:</b> </code>';
             echo '<code>' . $result1 . '</code><br><br>';		
 			
 			echo '</div></fieldset>';

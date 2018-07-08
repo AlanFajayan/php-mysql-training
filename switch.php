@@ -33,29 +33,30 @@
 			<fieldset>
 			<legend id="legendSwitch">Switch</legend>
 			<div id="divSwitch">
-            &emsp;<code><i>// switch: test multiple values</i></code><br>        
-            &emsp;<code>$a = 2;</code><br>            					
-            &emsp;<code>PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> switch ($a) {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; case 0:<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result = "a equals 0";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;break;<br> 
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; case 1:<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result = "a equals 1";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;break;<br> 
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; case 2:<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result = "a equals 2";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;break;<br> 
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; case 3:<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result = "a equals 3";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;break;<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; default:<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result = "a is not 0, 1, 2, or 3";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;break;<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp; }
-            </span>
-            <br>&emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">?&gt;</span></code><br>
-			&emsp;<code><b>result:</b> </code>';
+            <code class="indent01"><i>// switch: test multiple values</i></code><br>        
+            <code class="indent01">$a = 2;</code><br>            					
+            <code class="indent01">PHP Code:<br>
+            <span class="red indent02">&lt;?php</span><br>
+            <span class="blue indent03"> switch ($a) {<br>
+            <span class="indent04">case 0:</span><br>
+            <span class="indent05">$result = "a equals 0";</span><br>
+            <span class="indent05">break;</span><br> 
+            <span class="indent04">case 1:</span><br>
+            <span class="indent05">$result = "a equals 1";</span><br>
+            <span class="indent05">break;</span><br> 
+            <span class="indent04">case 2:</span><br>
+            <span class="indent05">$result = "a equals 2";</span><br>
+            <span class="indent05">break;</span><br> 
+            <span class="indent04">case 3:</span><br>
+            <span class="indent05">$result = "a equals 3";</span><br>
+            <span class="indent05">break;</span><br>
+            <span class="indent04">default:</span><br>
+            <span class="indent05">$result = "a is not 0, 1, 2, or 3";</br>
+            <span class="indent05">break;</span><br>
+            <span class="indent03">}</span>
+            </span><br>
+            <span class="red indent02">?&gt;</span></code><br>
+			<code class="indent01"><b>result:</b> </code>';
             echo '<code>' . $result . '</code><br><br>';
 
             // ChineseZodiac
@@ -78,25 +79,26 @@
             }
             			
             echo '		            
-            &emsp;<code>$year = 2018;</code><br>					
-            &emsp;<code>PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> switch (($year - 4) % 12) {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;case  &nbsp;0: $zodiac = \'Rat\'; &emsp;&emsp;&emsp;&emsp;&emsp;break;<br>  
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;case  &nbsp;1: $zodiac = \'Ox\'; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;break;<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;case  &nbsp;2: $zodiac = \'Tiger\'; &emsp;&emsp;&emsp;break;<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;case  &nbsp;3: $zodiac = \'Rabbit\'; &emsp;&emsp;break;<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;case  &nbsp;4: $zodiac = \'Dragon\'; &emsp;&emsp;break;<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;case  &nbsp;5: $zodiac = \'Snake\'; &emsp;&emsp;&emsp;break;<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;case  &nbsp;6: $zodiac = \'Horse\'; &emsp;&emsp;&emsp;break;<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;case  &nbsp;7: $zodiac = \'Goat\'; &emsp;&emsp;&emsp;&emsp;break;<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;case  &nbsp;8: $zodiac = \'Monkey\'; &emsp;&emsp;break;<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;case  &nbsp;9: $zodiac = \'Rooster\'; &emsp;break;<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;case 10: $zodiac = \'Dog\'; &emsp;&emsp;&emsp;&emsp;&emsp;break;<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;case 11: $zodiac = \'Pig\'; &emsp;&emsp;&emsp;&emsp;&emsp;break;<br>             
-            &emsp;&emsp;&emsp;&emsp;&emsp; }
-            </span>
-            <br>&emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">?&gt;</span></code><br>
-			&emsp;<code><b>result:</b> </code>';
+            <code class="indent01">$year = 2018;</code><br>					
+            <code class="indent01">PHP Code:<br> 
+            <span class="red indent02">&lt;?php</span><br>
+            <span class="blue indent03"> switch (($year - 4) % 12) {<br>
+            <span class="indent04"><span class="widthFixed250">case  &nbsp;0: $zodiac = \'Rat\'; </span>break;</span><br>  
+            <span class="indent04"><span class="widthFixed250">case  &nbsp;1: $zodiac = \'Ox\'; </span>break;</span><br>
+            <span class="indent04"><span class="widthFixed250">case  &nbsp;2: $zodiac = \'Tiger\'; </span>break;</span><br>
+            <span class="indent04"><span class="widthFixed250">case  &nbsp;3: $zodiac = \'Rabbit\'; </span>break;</span><br>
+            <span class="indent04"><span class="widthFixed250">case  &nbsp;4: $zodiac = \'Dragon\'; </span>break;</span><br>
+            <span class="indent04"><span class="widthFixed250">case  &nbsp;5: $zodiac = \'Snake\'; </span>break;</span><br>
+            <span class="indent04"><span class="widthFixed250">case  &nbsp;6: $zodiac = \'Horse\'; </span>break;</span><br>
+            <span class="indent04"><span class="widthFixed250">case  &nbsp;7: $zodiac = \'Goat\'; </span>break;</span><br>
+            <span class="indent04"><span class="widthFixed250">case  &nbsp;8: $zodiac = \'Monkey\'; </span>break;</span><br>
+            <span class="indent04"><span class="widthFixed250">case  &nbsp;9: $zodiac = \'Rooster\';</span>break;</span><br>
+            <span class="indent04"><span class="widthFixed250">case 10: $zodiac = \'Dog\'; </span>break;</span><br>
+            <span class="indent04"><span class="widthFixed250">case 11: $zodiac = \'Pig\'; </span>break;</span><br>             
+            <span class="indent03"> }</span>
+            </span><br>
+            <span class="red indent02">?&gt;</span></code><br>
+			<code class="indent01"><b>result:</b> </code>';
             echo '<code>' . "{$year} is the year of the {$zodiac}" . '</code><br><br>';
 
             // case with multiple values
@@ -114,22 +116,23 @@
 			}
 
             echo '	
-            &emsp;<code><i>// case with multiple values</i></code><br>	            
-            &emsp;<code>$user_type = \'customer\';</code><br>					
-            &emsp;<code>PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> switch ($user_type) {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;case \'student\':<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result2 = "Welcome!";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;break;<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;case \'press\':<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;case \'customer\':<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;case \'admin\':<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result2 = "Hello!";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;break;<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp; }
-            </span>
-            <br>&emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">?&gt;</span></code><br>
-			&emsp;<code><b>result:</b> </code>';
+            <code class="indent01"><i>// case with multiple values</i></code><br>	            
+            <code class="indent01">$user_type = \'customer\';</code><br>					
+            <code class="indent01">PHP Code:<br> 
+            <span class="red indent02">&lt;?php</span><br>
+            <span class="blue indent03"> switch ($user_type) {<br>
+            <span class="indent04">case \'student\':</span><br>
+            <span class="indent05">$result2 = "Welcome!";</span><br>
+            <span class="indent05">break;</span><br>
+            <span class="indent04">case \'press\':</span><br>
+            <span class="indent04">case \'customer\':</span><br>
+            <span class="indent04">case \'admin\':</span><br>
+            <span class="indent05">$result2 = "Hello!";</span><br>
+            <span class="indent05">break;</span><br>
+            <span class="indent03"> }</span>
+            </span><br>
+            <span class="red indent02">?&gt;</span></code><br>
+			<code class="indent01"><b>result:</b> </code>';
             echo '<code>' . $result2 . '</code><br><br>';
 
 			echo '</div></fieldset>';

@@ -17,19 +17,19 @@
 			<fieldset>
 			<legend id="legendLinks">Links and URLs</legend>
 			<div id="divLinks">
-            &emsp;<code><i>// using GET values</i></code><br> 
-            &emsp;<code> PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
-            <span class="blue">            
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$link_name = "Second Page";<br> 
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$id = 5;<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$company = "Johnson & Johnson";<br><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;echo ' . htmlspecialchars('<a href="links.php?id=' . $id . '&company=' . $company . '">' . $link_name . '</a>') . '<br>
+            <code class="indent01"><i>// using GET values</i></code><br> 
+            <code class="indent01">PHP Code:<br>
+            <span class="red indent02">&lt;?php</span><br>
+            <span class="blue indent03">$link_name = "Second Page";<br> 
+            <span class="indent03">$id = 5;</span><br>
+            <span class="indent03">$company = "Johnson & Johnson";</span><br><br>
+            <span class="indent03">echo ' . htmlspecialchars('<a href="links.php?id=' . $id . '&company=' . $company . '">' . $link_name . '</a>') . '<br>
             </span>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">?&gt;</span></code><br>
-			&emsp;<code> <b>link to next page:</b> </code>';
+            <span class="red indent02">?&gt;</span></code><br>
+			<code class="indent01"><b>link to next page:</b> </code>';
             echo '<a href="links.php?id=' . $id . '&company=' . $company . '"><code>' . $link_name . '</code></a><br>
-            &emsp;<code> <b>result:</b> </code><br>
-            <code><div style=\'margin-left:30px;\'>' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] . '</div></code><br>';
+            <code class="indent01"><b>result:</b> </code><br>
+            <code><div class="px30">' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] . '</div></code><br>';
             
             $getId = '';
             $getCompany = '';
@@ -39,16 +39,16 @@
             }
             
             echo '			
-            &emsp;<code><i>// accessing super global variable $_GET values</i></code><br> 
-            &emsp;<code> PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
-            <span class="blue">            
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$getId = $_GET[\'id\'];<br> 
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$getCompany = $_GET[\'company\'];<br><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;echo \'id = \' . $getId . \', company = \' . $getCompany<br> 
+            <code class="indent01"><i>// accessing super global variable $_GET values</i></code><br> 
+            <code class="indent01">PHP Code:<br>
+            <span class="red indent02">&lt;?php</span><br>
+            <span class="blue indent03">$getId = $_GET[\'id\'];<br> 
+            <span class="indent03">$getCompany = $_GET[\'company\'];</span><br><br>
+            <span class="indent03">echo \'id = \' . $getId . \', company = \' . $getCompany<br> 
             </span>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">?&gt;</span></code><br>
-			&emsp;<code> <b>result:</b> </code><br>';
-            echo '<code><div style=\'margin-left:30px;\'>id = ' . $getId . ', company = ' . $getCompany . '</div></code><br>';
+            <span class="red indent02">?&gt;</span></code><br>
+			<code class="indent01"><b>result:</b> </code><br>';
+            echo '<code><div class="px30">id = ' . $getId . ', company = ' . $getCompany . '</div></code><br>';
             
 
 			echo '</div></fieldset>';

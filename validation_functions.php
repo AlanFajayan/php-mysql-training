@@ -34,28 +34,28 @@
 			<fieldset>
 			<legend id="legendFunctions">Custom Validation Functions</legend>
 			<div id="divFunctions">
-            &emsp;<code><i>// using validation functions</i></code><br>              
-            &emsp;<code>PHP Code:<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php </span><br> 
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<code><i>// check for presence</i></code><br> 
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue">function has_presence($value) {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;return isset($value) && $value !== "";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;}<br> 
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<code><i>// string max length</i></code><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;function has_max_length($value, $max) {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;return strlen($value) <= $max;<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;}<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<code><i>// inclusion in a set</i></code><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;function has_inclusion_in($value, $set) {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;return in_array($value, $set);<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;}<br><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result1 = has_presence("0") ? \'true\' : \'false\';<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result2 = has_max_length("abcdef",5) ? \'true\' : \'false\';<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result3 = has_inclusion_in("5",array("1", "2", "3", "4")) ? \'true\' : \'false\';<br>
+            <code class="indent01"><i>// using validation functions</i></code><br>              
+            <code class="indent01">PHP Code:<br>
+            <span class="red indent02">&lt;?php </span><br> 
+            <code class="indent03"><i>// check for presence</i></code><br> 
+            <span class="blue indent03">function has_presence($value) {<br>
+            <span class="indent04">return isset($value) && $value !== "";</span><br>
+            <span class="indent04">}</span><br> 
+            <code class="indent03"><i>// string max length</i></code><br>
+            <span class="indent03">function has_max_length($value, $max) {<br>
+            <span class="indent04">return strlen($value) <= $max;</span><br>
+            <span class="indent03">}</span><br>
+            <code class="indent03"><i>// inclusion in a set</i></code><br>
+            <span class="indent03">function has_inclusion_in($value, $set) {</span><br>
+            <span class="indent04">return in_array($value, $set);</span><br>
+            <span class="indent03">}</span><br><br>
+            <span class="indent03">$result1 = has_presence("0") ? \'true\' : \'false\';</span><br>
+            <span class="indent03">$result2 = has_max_length("abcdef",5) ? \'true\' : \'false\';</span><br>
+            <span class="indent03">$result3 = has_inclusion_in("5",array("1", "2", "3", "4")) ? \'true\' : \'false\';</span><br>
             </span>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">?&gt; </span><br><br>            
-			&emsp;<code><b> result:</b> </code>';
-            echo '<div style=\'margin-left:30px;\'><code><pre>';
+            <span class="red indent02">?&gt; </span></code><br><br>            
+			<code class="indent01"><b> result:</b> </code>';
+            echo '<div class="px30"><code><pre>';
             echo 'has_presence("0") = ' . $result1 . '<br>';
             echo 'has_max_length("abcdef",5) = ' . $result2 . '<br>';
             echo 'has_inclusion_in("5",array("1", "2", "3", "4")) = ' . $result3 . '<br>';

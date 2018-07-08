@@ -34,38 +34,38 @@
 			<fieldset>
 			<legend id="legendSinglePage">Single-Page Form Processing</legend>
 			<div id="divSinglePage">
-            &emsp;<code><i>// single-page form</i></code><br>  
-            &emsp;<code><i>// php code at the top of the page</i></code><br>
-            &emsp;<code>PHP Code:<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php </span><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue">require_once("included_functions.php");<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;if (isset($_POST[\'submit\'])) {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<code><i>// form was submitted</i></code><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$username = $_POST["username"];<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$password = $_POST["password"];<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;if ($username == "kevin" && $password == "secret") {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<code><i>// successful login</i></code><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;redirect_to("form_single.php");<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;} else {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$message = "There were some errors.";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;}<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;} else {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$username = "";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$message = "Please log in.";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;}<br>           
+            <code class="indent01"><i>// single-page form</i></code><br>  
+            <code class="indent01"><i>// php code at the top of the page</i></code><br>
+            <code class="indent01">PHP Code:<br>
+            <span class="red indent02">&lt;?php </span><br>
+            <span class="blue indent03">require_once("included_functions.php");<br>
+            <span class="indent03">if (isset($_POST[\'submit\'])) {</span><br>
+            <span class="indent04"><code><i>// form was submitted</i></code></span><br>
+            <span class="indent04">$username = $_POST["username"];</span><br>
+            <span class="indent04">$password = $_POST["password"];</span><br>
+            <span class="indent04">if ($username == "kevin" && $password == "secret") {</span><br>
+            <code class="indent05"><i>// successful login</i></code><br>
+            <span class="indent05">redirect_to("form_single.php");</span><br>
+            <span class="indent04">} else {</span><br>
+            <span class="indent05">$message = "There were some errors.";</span><br>
+            <span class="indent04">}</span><br>
+            <span class="indent03">} else {</span><br>
+            <span class="indent04">$username = "";</span><br>
+            <span class="indent04">$message = "Please log in.";</span><br>
+            <span class="indent03">}</span><br>           
             </span>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">?&gt; </span><br><br>
-            &emsp;<code> HTML Code:<br> 
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;form </span>
+            <span class="red indent02">?&gt; </span><br><br>
+            <code class="indent01">HTML Code:<br> 
+            <span class="red indent02">&lt;form </span>
             <span class="blue">action="form_single.php" method="post"<span class="red">></span><br></span>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Username: 
+            <span class="indent03">Username: 
             <span class="red">&lt;input</span> <span class="blue">type="text" name="username" value="<span class="red">&lt;?php</span> echo htmlspecialchars($username); <span class="red">?&gt;</span>"</span><span class="red"> /&gt;</span><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Password: 
+            <span class="indent03">Password: 
             <span class="red">&lt;input</span> <span class="blue">type="password" name="password" value=""</span><span class="red"> /&gt;</span><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;input</span> <span class="blue">type="submit" name="submit" value="Submit"</span><span class="red"> /&gt;</span><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;/form&gt;</span></code><br><br>
+            <span class="red indent03">&lt;input</span> <span class="blue">type="submit" name="submit" value="Submit"</span><span class="red"> /&gt;</span><br>
+            <span class="red indent02">&lt;/form&gt;</span></code><br><br>
 			&emsp;<code><b> result:</b> </code>';
-            echo '<code><div style=\'margin-left:30px;\'>
+            echo '<code><div class="px30">
                 <form action="form_single.php" method="post">
                 Username: <input type="text" name="username" value="' . htmlspecialchars($username) . '" /><br>
                 Password: <input type="password" name="password" value="" /><br>
@@ -75,13 +75,14 @@
             </code></div><br>';
 
             echo '	 
-            &emsp;<code><i>// super global $_POST</i></code><br>             
-            &emsp;<code> PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> print_r($_POST);<br> 
+            <code class="indent01"><i>// super global $_POST</i></code><br>             
+            <code class="indent01">PHP Code:<br>
+            <span class="red indent02">&lt;?php</span><br>
+            <span class="blue indent03"> print_r($_POST);<br> 
             </span>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">?&gt;</span></code><br>
-            &emsp;<code><b> result:</b> </code><br>';
-            echo '<div style=\'margin-left:30px;\'><code><pre>';
+            <span class="red indent02">?&gt;</span></code><br>
+            <code class="indent01"><b> result:</b> </code><br>';
+            echo '<div class="px30"><code><pre>';
             print_r($_POST) . '<br>';
             echo $message;
             echo '</pre></code></div>';

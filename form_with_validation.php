@@ -95,89 +95,89 @@
 			<fieldset>
 			<legend id="legendSinglePage">Single-Page Form with Validation</legend>
 			<div id="divSinglePage">
-            &emsp;<code><i>// single-page form with validation</i></code><br>  
-            &emsp;<code><i>// php code at the top of the page</i></code><br>
-            &emsp;<code>PHP Code:<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php </span><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue">require_once("included_functions.php");<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$errors = array();<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$message = "";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<code><i> // test for presence</i></code><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;function has_presence($value) {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;return isset($value) && $value !== "";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;}<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<code><i> // string max length</i></code><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;function has_max_length($value, $max) {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;return strlen($value) <= $max;<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;}<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<code><i> // inclusion in a set</i></code><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;function has_inclusion_in($value, $set) {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;return in_array($value, $set);<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;}<br><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;function validate_max_lengths($fields_with_max_lengths) {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;global $errors;<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<code><i> // Expects an assoc. array</i></code><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;foreach($fields_with_max_lengths as $field => $max) {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$value = trim($_POST[$field]);<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;if (!has_max_length($value, $max)) {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$errors[$field] = ucfirst($field) . " is too long";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;}<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;}<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;}<br><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;function form_errors($errors=array()) {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$output = "";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;if (!empty($errors)) {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$output .= "&lt;div class=\"error\"&gt;";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$output .= "Please fix the following errors:";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$output .= "&lt;ul&gt;";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;foreach ($errors as $key => $error) {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$output .= "&lt;li&gt;{$error}&lt;/li&gt;";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;}<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$output .= "&lt;/ul&gt;";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$output .= "&lt;/div&gt;";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;}<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;return $output;<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;}<br><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;if (isset($_POST[\'submit\'])) {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<code><i>// form was submitted</i></code><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$username = $_POST["username"];<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$password = $_POST["password"];<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<code><i>// Validations</i></code><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$fields_required = array("username", "password");<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;foreach($fields_required as $field) {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$value = trim($_POST[$field]);<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;if (!has_presence($value)) {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$errors[$field] = ucfirst($field) . " can\'t be blank";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;}<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;}<br><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$fields_with_max_lengths = array("username" => 30, "password" => 8);<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;validate_max_lengths($fields_with_max_lengths);<br><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;if (empty($errors)) {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<code><i>// try to login</i></code><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;if ($username == "kevin" && $password == "secret") {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<code><i>// successful login</i></code><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;redirect_to("form_single.php");<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;} else {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$message = "Username/password do not match.";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;}<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;}<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;} else {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$username = "";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$message = "Please log in.";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;}<br>           
+            <code class="indent01"><i>// single-page form with validation</i></code><br>  
+            <code class="indent01"><i>// php code at the top of the page</i></code><br>
+            <code class="indent01">PHP Code:<br>
+            <span class="red indent02">&lt;?php </span><br>
+            <span class="blue indent03">require_once("included_functions.php");<br>
+            <span class="indent03">$errors = array();</span><br>
+            <span class="indent03">$message = "";</span><br>
+            <code class="indent03"><i> // test for presence</i></code><br>
+            <span class="indent03">function has_presence($value) {</span><br>
+            <span class="indent04">return isset($value) && $value !== "";</span><br>
+            <span class="indent03">}</span><br>
+            <code class="indent03"><i> // string max length</i></code><br>
+            <span class="indent03">function has_max_length($value, $max) {</span><br>
+            <span class="indent04">return strlen($value) <= $max;</span><br>
+            <span class="indent03">}</span><br>
+            <code class="indent03"><i> // inclusion in a set</i></code><br>
+            <span class="indent03">function has_inclusion_in($value, $set) {</span><br>
+            <span class="indent04">return in_array($value, $set);</span><br>
+            <span class="indent03">}</span><br><br>
+            <span class="indent03">function validate_max_lengths($fields_with_max_lengths) {</span><br>
+            <span class="indent04">global $errors;</span><br>
+            <code class="indent04"><i> // Expects an assoc. array</i></code><br>
+            <span class="indent04">foreach($fields_with_max_lengths as $field => $max) {</span><br>
+            <span class="indent05">$value = trim($_POST[$field]);</span><br>
+            <span class="indent05">if (!has_max_length($value, $max)) {</span><br>
+            <span class="indent06">$errors[$field] = ucfirst($field) . " is too long";</span><br>
+            <span class="indent05">}</span><br>
+            <span class="indent04">}</span><br>
+            <span class="indent03">}</span><br><br>
+            <span class="indent03">function form_errors($errors=array()) {</span><br>
+            <span class="indent04">$output = "";</span><br>
+            <span class="indent04">if (!empty($errors)) {</span><br>
+            <span class="indent05">$output .= "&lt;div class=\"error\"&gt;";</span><br>
+            <span class="indent05">$output .= "Please fix the following errors:";</span><br>
+            <span class="indent05">$output .= "&lt;ul&gt;";</span><br>
+            <span class="indent05">foreach ($errors as $key => $error) {</span><br>
+            <span class="indent06">$output .= "&lt;li&gt;{$error}&lt;/li&gt;";</span><br>
+            <span class="indent05">}</span><br>
+            <span class="indent05">$output .= "&lt;/ul&gt;";</span><br>
+            <span class="indent05">$output .= "&lt;/div&gt;";</span><br>
+            <span class="indent04">}</span><br>
+            <span class="indent04">return $output;</span><br>
+            <span class="indent03">}</span><br><br>
+            <span class="indent03">if (isset($_POST[\'submit\'])) {</span><br>
+            <code class="indent04"><i>// form was submitted</i></code><br>
+            <span class="indent04">$username = $_POST["username"];</span><br>
+            <span class="indent04">$password = $_POST["password"];</span><br>
+            <code class="indent04"><i>// Validations</i></code><br>
+            <span class="indent04">$fields_required = array("username", "password");</span><br>
+            <span class="indent04">foreach($fields_required as $field) {</span><br>
+            <span class="indent05">$value = trim($_POST[$field]);</span><br>
+            <span class="indent05">if (!has_presence($value)) {</span><br>
+            <span class="indent06">$errors[$field] = ucfirst($field) . " can\'t be blank";</span><br>
+            <span class="indent05">}</span><br>
+            <span class="indent04">}</span><br><br>
+            <span class="indent04">$fields_with_max_lengths = array("username" => 30, "password" => 8);</span><br>
+            <span class="indent04">validate_max_lengths($fields_with_max_lengths);</span><br><br>
+            <span class="indent04">if (empty($errors)) {</span><br>
+            <code class="indent05"><i>// try to login</i></code><br>
+            <span class="indent05">if ($username == "kevin" && $password == "secret") {</span><br>
+            <code class="indent06"><i>// successful login</i></code><br>
+            <span class="indent06">redirect_to("form_single.php");</span><br>
+            <span class="indent05">} else {</span><br>
+            <span class="indent06">$message = "Username/password do not match.";</span><br>
+            <span class="indent05">}</span><br>
+            <span class="indent04">}</span><br>
+            <span class="indent03">} else {</span><br>
+            <span class="indent04">$username = "";</span><br>
+            <span class="indent04">$message = "Please log in.";</span><br>
+            <span class="indent03">}</span><br>           
             </span>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">?&gt; </span><br><br>
-            &emsp;<code> HTML Code:<br> 
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;form </span>
+            <span class="red indent02">?&gt; </span><br><br>
+            <code class="indent01">HTML Code:<br> 
+            <span class="red indent02">&lt;form </span>
             <span class="blue">action="form_single.php" method="post"<span class="red">></span><br></span>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Username: 
+            <span class="indent03">Username: 
             <span class="red">&lt;input</span> <span class="blue">type="text" name="username" value="<span class="red">&lt;?php</span> echo htmlspecialchars($username); <span class="red">?&gt;</span>"</span><span class="red"> /&gt;</span><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Password: 
+            <span class="indent03">Password: 
             <span class="red">&lt;input</span> <span class="blue">type="password" name="password" value=""</span><span class="red"> /&gt;</span><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;input</span> <span class="blue">type="submit" name="submit" value="Submit"</span><span class="red"> /&gt;</span><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;/form&gt;</span></code><br><br>
-			&emsp;<code><b> result:</b> </code>';
-            echo '<code><div style=\'margin-left:30px;\'>
+            <span class="red indent03">&lt;input</span> <span class="blue">type="submit" name="submit" value="Submit"</span><span class="red"> /&gt;</span><br>
+            <span class="red indent02">&lt;/form&gt;</span></code><br><br>
+			<code class="indent01"><b> result:</b> </code>';
+            echo '<code><div class="px30">
                 <form action="form_with_validation.php" method="post">
                 Username: <input type="text" name="username" value="' . htmlspecialchars($username) . '" /><br>
                 Password: <input type="password" name="password" value="" /><br>
@@ -186,7 +186,7 @@
                 </form>
             </code></div><br>';
             
-            echo '<div style=\'margin-left:30px;\'><code><pre>';            
+            echo '<div class="px30"><code><pre>';            
             echo $message . '<br>';
             echo form_errors($errors);
             echo '</pre></code></div>';

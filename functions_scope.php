@@ -19,30 +19,31 @@
 				$bar = "inside";  // local scope
 			}
 		
-			$result1 = "<div style='margin-left:30px;'>" . "1: " . $bar . "</div>";
-			$result2 = "<div style='margin-left:30px;'>" . foo() . "</div>";
-			$result3 = "<div style='margin-left:30px;'>" . "2: " . $bar . "</div>";	
+			$result1 = "<div class=\"px30\">" . "1: " . $bar . "</div>";
+			$result2 = "<div class=\"px30\">" . foo() . "</div>";
+			$result3 = "<div class=\"px30\">" . "2: " . $bar . "</div>";	
 			
 			echo '
 			<fieldset>
 			<legend id="legendScope">Functions: Scope and Global Variables</legend>
 			<div id="divScope">
-            &emsp;<code><i>// global vs. local scope</i></code><br> 
-            &emsp;<code> PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
-            <span class="blue">  
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$bar = "outside";   <i>// global scope</i><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;function foo() {<br>             
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;global $bar;<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;if (isset($bar)) {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;return "foo: " . $bar;;<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;}<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$bar = "inside";  <i>// local scope</i><br>	
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result1 = "1: " . $bar;<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result2 = foo();<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result3 = "2: " . $bar;<br> 
+            <code class="indent01"><i>// global vs. local scope</i></code><br> 
+			<code class="indent01">PHP Code:<br> 
+			<span class="red indent02">&lt;?php</span><br>
+            <span class="blue indent03">$bar = "outside";   <i>// global scope</i><br>
+            <span class="indent03">function foo() {</span><br>             
+			<span class="indent04">global $bar;</span><br>
+            <span class="indent04">if (isset($bar)) {</span><br>
+			<span class="indent05">return "foo: " . $bar;</span><br>
+			<span class="indent04">}</span><br>
+            <span class="indent03">}</span><br>
+            <span class="indent03">$bar = "inside";  <i>// local scope</i></span><br>	
+            <span class="indent03">$result1 = "1: " . $bar;</span><br>
+            <span class="indent03">$result2 = foo();</span><br>
+            <span class="indent03">$result3 = "2: " . $bar;</span><br> 
             </span>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">?&gt;</span></code><br>
-			&emsp;<code> <b>result:</b> </code>';
+            <span class="red indent02">?&gt;</span></code><br>
+			<code class="indent01"><b>result:</b> </code>';
             echo '<code>' . $result1 . $result2 . $result3 . '</code><br><br>';            
                         
 			echo '</div></fieldset>';

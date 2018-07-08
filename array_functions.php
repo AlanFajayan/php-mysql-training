@@ -15,66 +15,66 @@
 		<fieldset>
 		<legend id="legendArrayFunctions">Array Functions</legend>
 		<div id="divArrayFunctions">
-		&emsp;<code><i>// declare array variable $numbers</i></code><br>
-		&emsp;<code>$numbers = array(8,23,15,42,16,4);</code><br><br>';
+		<code class="indent01"><i>// declare array variable $numbers</i></code><br>
+		<code class="indent01">$numbers = array(8,23,15,42,16,4);</code><br><br>';
 		
 		echo '
-		&emsp;<code><i>// count: function that returns the length of the array</i></code><br>
-		&emsp;<code><i>// count(array_variable)</i></code><br>
-		&emsp;<code>Count: <span class="red">&lt;?php</span><span class="blue"> echo count</span>($numbers) <span class="red">?&gt;</span></code><br>
-		&emsp;<code><b>result:</b> </code>';
+		<code class="indent01"><i>// count: function that returns the length of the array</i></code><br>
+		<code class="indent01"><i>// count(array_variable)</i></code><br>
+		<code class="indent01">Count: <span class="red">&lt;?php</span><span class="blue"> echo count</span>($numbers) <span class="red">?&gt;</span></code><br>
+		<code class="indent01"><b>result:</b> </code>';
 		echo '<code>' . count($numbers) . '</code><br><br>';
 		
 		echo '
-		&emsp;<code><i>// max: function that returns the highest value in the array</i></code><br>
-		&emsp;<code><i>// max(array_variable)</i></code><br>
-		&emsp;<code>Max: <span class="red">&lt;?php</span><span class="blue"> echo max</span>($numbers) <span class="red">?&gt;</span></code><br>
-		&emsp;<code><b>result:</b> </code>';
+		<code class="indent01"><i>// max: function that returns the highest value in the array</i></code><br>
+		<code class="indent01"><i>// max(array_variable)</i></code><br>
+		<code class="indent01">Max: <span class="red">&lt;?php</span><span class="blue"> echo max</span>($numbers) <span class="red">?&gt;</span></code><br>
+		<code class="indent01"><b>result:</b> </code>';
 		echo '<code>' . max($numbers) . '</code><br><br>';
 		
 		echo '
-		&emsp;<code><i>// min: function that returns the lowest value in the array</i></code><br>
-		&emsp;<code><i>// min(array_variable)</i></code><br>
-		&emsp;<code>Min: <span class="red">&lt;?php</span><span class="blue"> echo min</span>($numbers) <span class="red">?&gt;</span></code><br>
-		&emsp;<code><b>result:</b> </code>';
+		<code class="indent01"><i>// min: function that returns the lowest value in the array</i></code><br>
+		<code class="indent01"><i>// min(array_variable)</i></code><br>
+		<code class="indent01">Min: <span class="red">&lt;?php</span><span class="blue"> echo min</span>($numbers) <span class="red">?&gt;</span></code><br>
+		<code class="indent01"><b>result:</b> </code>';
 		echo '<code>' . min($numbers) . '</code><br><br>';
 		
 		echo '
-		&emsp;<code><i>// sort: function that arranges the values in the array from lowest to highest</i></code><br>
-		&emsp;<code><i>// sort(array_variable)</i></code><br>
-		&emsp;<code>Sort: <span class="red">&lt;?php</span><span class="blue"> echo sort</span>($numbers) <span class="red">?&gt;</span></code><br>
-		&emsp;<code><b>result:</b> </code><pre>';		
+		<code class="indent01"><i>// sort: function that arranges the values in the array from lowest to highest</i></code><br>
+		<code class="indent01"><i>// sort(array_variable)</i></code><br>
+		<code class="indent01">Sort: <span class="red">&lt;?php</span><span class="blue"> echo sort</span>($numbers) <span class="red">?&gt;</span></code><br>
+		<code class="indent01"><b>result:</b> </code><pre>';		
 		echo '<code>' . sort($numbers) . print_r($numbers) . '</code></pre><br><br>';
 		
 		echo '
-		&emsp;<code><i>// rsort: function that arranges the values in the array from highest to lowest</i></code><br>
-		&emsp;<code><i>// rsort(array_variable)</i></code><br>
-		&emsp;<code>Reverse Sort: <span class="red">&lt;?php</span><span class="blue"> echo rsort</span>($numbers) <span class="red">?&gt;</span></code><br>
-		&emsp;<code><b>result:</b> </code><pre>';		
+		<code class="indent01"><i>// rsort: function that arranges the values in the array from highest to lowest</i></code><br>
+		<code class="indent01"><i>// rsort(array_variable)</i></code><br>
+		<code class="indent01">Reverse Sort: <span class="red">&lt;?php</span><span class="blue"> echo rsort</span>($numbers) <span class="red">?&gt;</span></code><br>
+		<code class="indent01"><b>result:</b> </code><pre>';		
 		echo '<code>' . rsort($numbers) . print_r($numbers) . '</code></pre><br><br>';
 		
 		echo '
-		&emsp;<code><i>// implode: convert an array to a character-separated string</i></code><br>
-		&emsp;<code><i>// implode("character_separator",array_variable)</i></code><br>
-		&emsp;<code>Implode: <span class="red">&lt;?php</span><span class="blue"> echo implode</span>(" * ",$numbers) <span class="red">?&gt;</span></code><br>
-		&emsp;<code><b>result:</b> </code>';		
+		<code class="indent01"><i>// implode: convert an array to a character-separated string</i></code><br>
+		<code class="indent01"><i>// implode("character_separator",array_variable)</i></code><br>
+		<code class="indent01">Implode: <span class="red">&lt;?php</span><span class="blue"> echo implode</span>(" * ",$numbers) <span class="red">?&gt;</span></code><br>
+		<code class="indent01"><b>result:</b> </code>';		
 		echo '<code>' . $num_string = implode(" * ", $numbers) . '</code><br><br>';
 		
 		echo '
-		&emsp;<code><i>// explode: convert a character-separated string to an array</i></code><br>
-		&emsp;<code><i>// explode("character_separator",array_variable)</i></code><br>
-		&emsp;<code>Explode: <span class="red">&lt;?php</span><span class="blue"> print_r(explode</span>(" * ",$num_string)) <span class="red">?&gt;</span></code><br>
-		&emsp;<code><b>result:</b> </code>';		
+		<code class="indent01"><i>// explode: convert a character-separated string to an array</i></code><br>
+		<code class="indent01"><i>// explode("character_separator",array_variable)</i></code><br>
+		<code class="indent01">Explode: <span class="red">&lt;?php</span><span class="blue"> print_r(explode</span>(" * ",$num_string)) <span class="red">?&gt;</span></code><br>
+		<code class="indent01"><b>result:</b> </code>';		
 		echo '<code>' . print_r(explode(" * ", $num_string)) . '</code><br><br>';
 		
 		echo '
-		&emsp;<code><i>// in_array: returns one if parameter value is in the array</i></code><br>
-		&emsp;<code><i>// in_array(value_to_test,array_variable)</i></code><br>
-		&emsp;<code>15 in array?: <span class="red">&lt;?php</span><span class="blue"> echo in_array(</span>15,$numbers) <span class="red">?&gt;</span></code><br>
-		&emsp;<code><b>result:</b> </code>';		
+		<code class="indent01"><i>// in_array: returns one if parameter value is in the array</i></code><br>
+		<code class="indent01"><i>// in_array(value_to_test,array_variable)</i></code><br>
+		<code class="indent01">15 in array?: <span class="red">&lt;?php</span><span class="blue"> echo in_array(</span>15,$numbers) <span class="red">?&gt;</span></code><br>
+		<code class="indent01"><b>result:</b> </code>';		
 		echo '<code>' . in_array(15, $numbers) . '</code><br>
-		&emsp;<code>19 in array?: <span class="red">&lt;?php</span><span class="blue"> echo in_array(</span>19,$numbers) <span class="red">?&gt;</span></code><br>
-		&emsp;<code><b>result:</b> </code>';		
+		<code class="indent01">19 in array?: <span class="red">&lt;?php</span><span class="blue"> echo in_array(</span>19,$numbers) <span class="red">?&gt;</span></code><br>
+		<code class="indent01"><b>result:</b> </code>';		
 		echo '<code>' . in_array(19, $numbers) . '</code><br><br>';
 		
 		echo '</div></fieldset>';

@@ -15,25 +15,25 @@
 		<fieldset>
 		<legend id="legendAssocArrays">Associative Arrays</legend>
 		<div id="divAssocArrays">
-		&emsp;<code><i>// declare associative array variable $assoc</i></code><br>
-		&emsp;<code>$assoc = array("first_name" => "Kevin", "last_name" => "Skoglund");</code><br><br>
-		&emsp;<code><i>// display index "first_name"</i></code><br>			
-		&emsp;<code>Display index "first_name": <span class="red">&lt;?php</span><span class="blue"> echo $assoc</span>["first_name"]; <span class="red">?&gt;</span></code><br>
-		&emsp;<code><b>result:</b> </code>';
+		<code class="indent01"><i>// declare associative array variable $assoc</i></code><br>
+		<code class="indent01">$assoc = array("first_name" => "Kevin", "last_name" => "Skoglund");</code><br><br>
+		<code class="indent01"><i>// display index "first_name"</i></code><br>			
+		<code class="indent01">Display index "first_name": <span class="red">&lt;?php</span><span class="blue"> echo $assoc</span>["first_name"]; <span class="red">?&gt;</span></code><br>
+		<code class="indent01"><b>result:</b> </code>';
 		echo '<code>' . $assoc["first_name"] . '</code><br><br>
-		&emsp;<code><i>// display index "first_name" and concatenate with index "last_name"</i></code><br>			
-		&emsp;<code>Concatenate index values: <span class="red">&lt;?php</span><span class="blue"> echo $assoc</span>["first_name"] . " " . <span class="blue">$assoc</span>["last_name"]; <span class="red">?&gt;</span></code><br>
-		&emsp;<code><b>result:</b> </code>';
+		<code class="indent01"><i>// display index "first_name" and concatenate with index "last_name"</i></code><br>			
+		<code class="indent01">Concatenate index values: <span class="red">&lt;?php</span><span class="blue"> echo $assoc</span>["first_name"] . " " . <span class="blue">$assoc</span>["last_name"]; <span class="red">?&gt;</span></code><br>
+		<code class="indent01"><b>result:</b> </code>';
 		echo '<code>' . $assoc["first_name"] . " " . $assoc["last_name"] . '</code><br><br>
-		&emsp;<code><i>// replace value of index "first_name"</i></code><br>			
-		&emsp;<code>Replace index value: <span class="red">&lt;?php</span><span class="blue"> $assoc</span>["first_name"] = "Larry"; <span class="red">?&gt;</span></code><br>
-		&emsp;<code><b>result:</b> </code>';
+		<code class="indent01"><i>// replace value of index "first_name"</i></code><br>			
+		<code class="indent01">Replace index value: <span class="red">&lt;?php</span><span class="blue"> $assoc</span>["first_name"] = "Larry"; <span class="red">?&gt;</span></code><br>
+		<code class="indent01"><b>result:</b> </code>';
 		echo '<code>' . $assoc["first_name"] = "Larry" . '</code><br><br>';
 		
 		echo '			
-		&emsp;<code><i>// dynamic array vs. associative array</i></code><br>						
-		&emsp;<code><span class="red">&lt;?php</span><span class="blue"> echo</span> $numbers = array(4,8,15,16,23,42); <span class="red">?&gt;</span></code><br>
-		&emsp;<code><span class="red">&lt;?php</span><span class="blue"> echo</span> $numbers = array(0 => 4, 1 => 8, 2 => 15, 3 => 16, 4 => 23, 5 => 42); <span class="red">?&gt;</span></code><br><br>';
+		<code class="indent01"><i>// dynamic array vs. associative array</i></code><br>	
+		<code class="indent01"><span class="red">&lt;?php</span><span class="blue"> echo</span> $numbers = array(4,8,15,16,23,42); <span class="red">?&gt;</span></code><br>
+		<code class="indent01"><span class="red">&lt;?php</span><span class="blue"> echo</span> $numbers = array(0 => 4, 1 => 8, 2 => 15, 3 => 16, 4 => 23, 5 => 42); <span class="red">?&gt;</span></code><br><br>';
 		
 		echo '</div></fieldset>';
 		?>

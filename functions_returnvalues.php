@@ -21,18 +21,18 @@
 			<fieldset>
 			<legend id="legendReturnValues">Functions: Return Values</legend>
 			<div id="divReturnValues">
-            &emsp;<code><i>// returning a value from a function</i></code><br> 
-            &emsp;<code> PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
-            <span class="blue">            
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;function add($val1, $val2) {<br>             
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$sum = $val1 + $val2;<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;return $sum;<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;}<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result1 = add(3,4);<br>	
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result2 = add(5,$result1);<br>                  
+            <code class="indent01"><i>// returning a value from a function</i></code><br> 
+            <code class="indent01">PHP Code:<br> 
+            <span class="red indent02">&lt;?php</span><br>
+            <span class="blue indent03">function add($val1, $val2) {<br>             
+            <span class="indent04">$sum = $val1 + $val2;</span><br>
+            <span class="indent04">return $sum;</span><br>
+            <span class="indent03">}</span><br>
+            <span class="indent03">$result1 = add(3,4);</span><br>	
+            <span class="indent03">$result2 = add(5,$result1);</span><br>                  
             </span>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">?&gt;</span></code><br>
-			&emsp;<code> <b>result:</b> </code>';
+            <span class="red indent02">?&gt;</span></code><br>
+			<code class="indent01"><b>result:</b> </code>';
             echo '<code>' . $result1 . ', ' . $result2 . '</code><br><br>';
             
             // Chinese Zodiac as a function
@@ -55,34 +55,35 @@
               }
               
               $zodiac = chinese_zodiac(2013);
-              $result3 = "<div style ='margin-left:30px;'>2013 is the year of the {$zodiac}.</div>";
-              $result4 = "<div style ='margin-left:30px;'>2027 is the year of the " . chinese_zodiac(2027) . ".</div>";
+              $result3 = "<div class=\"px30\">2013 is the year of the {$zodiac}.</div>";
+              $result4 = "<div class=\"px30\">2027 is the year of the " . chinese_zodiac(2027) . ".</div>";
 			
             echo '	 
-            &emsp;<code><i>// Chinese Zodiac as a function</i></code><br> 
-            &emsp;<code> PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> function chinese_zodiac($year) {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> switch (($year - 4) % 12) {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;case  &nbsp;0: $zodiac = \'Rat\'; &emsp;&emsp;&emsp;&emsp;&emsp;break;<br>  
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;case  &nbsp;1: $zodiac = \'Ox\'; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;break;<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;case  &nbsp;2: $zodiac = \'Tiger\'; &emsp;&emsp;&emsp;break;<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;case  &nbsp;3: $zodiac = \'Rabbit\'; &emsp;&emsp;break;<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;case  &nbsp;4: $zodiac = \'Dragon\'; &emsp;&emsp;break;<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;case  &nbsp;5: $zodiac = \'Snake\'; &emsp;&emsp;&emsp;break;<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;case  &nbsp;6: $zodiac = \'Horse\'; &emsp;&emsp;&emsp;break;<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;case  &nbsp;7: $zodiac = \'Goat\'; &emsp;&emsp;&emsp;&emsp;break;<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;case  &nbsp;8: $zodiac = \'Monkey\'; &emsp;&emsp;break;<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;case  &nbsp;9: $zodiac = \'Rooster\'; &emsp;break;<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;case 10: $zodiac = \'Dog\'; &emsp;&emsp;&emsp;&emsp;&emsp;break;<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;case 11: $zodiac = \'Pig\'; &emsp;&emsp;&emsp;&emsp;&emsp;break;<br>             
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; }<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp; }<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> $zodiac = chinese_zodiac(2013);<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> $result3 = "2013 is the year of the {$zodiac}.";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> $result4 = "2027 is the year of the " . chinese_zodiac(2027) . ".";<br>
+            <code class="indent01"><i>// Chinese Zodiac as a function</i></code><br> 
+            <code class="indent01">PHP Code:<br> 
+            <span class="red indent02">&lt;?php</span><br>
+            <span class="blue indent03"> function chinese_zodiac($year) {<br>
+            <span class="indent04"> switch (($year - 4) % 12) {</span><br>
+            <span class="indent05"><span class="widthFixed250">case  &nbsp;0: $zodiac = \'Rat\';</span>break;</span><br>  
+            <span class="indent05"><span class="widthFixed250">case  &nbsp;1: $zodiac = \'Ox\'; </span>break;</span><br>
+            <span class="indent05"><span class="widthFixed250">case  &nbsp;2: $zodiac = \'Tiger\';</span>break;</span><br>
+            <span class="indent05"><span class="widthFixed250">case  &nbsp;3: $zodiac = \'Rabbit\'; </span>break;</span><br>
+            <span class="indent05"><span class="widthFixed250">case  &nbsp;4: $zodiac = \'Dragon\'; </span>break;</span><br>
+            <span class="indent05"><span class="widthFixed250">case  &nbsp;5: $zodiac = \'Snake\'; </span>break;</span><br>
+            <span class="indent05"><span class="widthFixed250">case  &nbsp;6: $zodiac = \'Horse\';</span>break;</span><br>
+            <span class="indent05"><span class="widthFixed250">case  &nbsp;7: $zodiac = \'Goat\'; </span>break;</span><br>
+            <span class="indent05"><span class="widthFixed250">case  &nbsp;8: $zodiac = \'Monkey\'; </span>break;</span><br>
+            <span class="indent05"><span class="widthFixed250">case  &nbsp;9: $zodiac = \'Rooster\';</span>break;</span><br>
+            <span class="indent05"><span class="widthFixed250">case 10: $zodiac = \'Dog\';</span>break;</span><br>
+            <span class="indent05"><span class="widthFixed250">case 11: $zodiac = \'Pig\'; </span>break;</span><br>
+            <span class="indent04">}</span><br>
+            <span class="indent03">}</span><br>
+            <span class="indent03">$zodiac = chinese_zodiac(2013);</span><br>
+            <span class="indent03">$result3 = "2013 is the year of the {$zodiac}.";</span><br>
+            <span class="indent03">$result4 = "2027 is the year of the " . chinese_zodiac(2027) . ".";</span><br>
             </span>
-            <br>&emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">?&gt;</span></code><br>
-            &emsp;<code><b>result:</b> </code>';
+            <span class="red indent02">?&gt;</span></code><br>
+            <code class="indent01"><b>result:</b> </code>';
             echo '<code>' . $result3 . $result4 . '</code><br>'; 
                         
             function better_hello($greeting, $target, $punct) {
@@ -92,14 +93,14 @@
             $result5 =  better_hello("Hello", "John Doe", "!");
             
             echo '			
-            &emsp;<code> PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
-            <span class="blue">            
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;function better_hello($greeting, $target, $punct) {<br>             
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;return $greeting . " " . $target . $punct;<br>            
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;}<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result5 =  better_hello("Hello", "John Doe", "!");<br></span>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">?&gt;</span></code><br>
-			&emsp;<code> <b>result:</b> </code>';
+            <code class="indent01">PHP Code:<br>
+            <span class="red indent02">&lt;?php</span><br>
+            <span class="blue indent03">;function better_hello($greeting, $target, $punct) {<br>    <span class="indent04">return $greeting . " " . $target . $punct;</span><br>            
+            <span class="indent03">}</span><br>
+            <span class="indent03">$result5 =  better_hello("Hello", "John Doe", "!");</span><br>
+            </span>
+            <span class="red indent02">?&gt;</span></code><br>
+			<code class="indent01"><b>result:</b> </code>';
             echo '<code>' . $result5  . '</code><br><br>';
 
 			echo '</div></fieldset>';

@@ -49,42 +49,42 @@
 			<fieldset>
 			<legend id="legendErrors">Displaying Validation Errors</legend>
 			<div id="divErrors">
-            &emsp;<code><i>// displaying validation errors</i></code><br>              
-            &emsp;<code>PHP Code:<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php </span><br>            
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue">$errors = array();<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$value1 = trim("");<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;if (!isset($value1) || $value1 === "") {<br>           
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$errors[\'value\'] = "value can\'t be blank";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;}<br>             
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$value2 = "ab";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$min = 3;<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;if (strlen($value2) < $min) {<br>           
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$errors[\'min\'] = "value does not meet minimum length";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;}<br>                       
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$max = 6;<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;if (strlen("abcdefg") > $max) {<br>           
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$errors[\'max\'] = "value does not meet maximum length";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;}<br><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;function form_errors($errors=array()) {<br>           
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$output = "";<br>            
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;if (!empty($errors)) {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$output .= "&lt;div class=\"error\"&gt;";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$output .= "Please fix the following errors:";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$output .= "&lt;ul&gt;";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;foreach ($errors as $key => $error) {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$output .= "&lt;li&gt;{$error}&lt;/li&gt;";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;}<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$output .= "&lt;/ul&gt;";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$output .= "&lt;/div&gt;";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;}<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;return $output;<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;}<br><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;echo form_errors($errors);<br>
+            <code class="indent01"><i>// displaying validation errors</i></code><br>              
+            <code class="indent01">PHP Code:<br>
+            <span class="red indent02">&lt;?php </span><br>            
+            <span class="blue indent03">$errors = array();<br>
+            <span class="indent03">$value1 = trim("");</span><br>
+            <span class="indent03">if (!isset($value1) || $value1 === "") {</span><br>           
+            <span class="indent04">$errors[\'value\'] = "value can\'t be blank";</span><br>
+            <span class="indent03">}</span><br>             
+            <span class="indent03">$value2 = "ab";</span><br>
+            <span class="indent03">$min = 3;</span><br>
+            <span class="indent03">if (strlen($value2) < $min) {</span><br>           
+            <span class="indent04">$errors[\'min\'] = "value does not meet minimum length";</span><br>
+            <span class="indent03">}</span><br>                       
+            <span class="indent03">$max = 6;</span><br>
+            <span class="indent03">if (strlen("abcdefg") > $max) {</span><br>           
+            <span class="indent04">$errors[\'max\'] = "value does not meet maximum length";</span><br>
+            <span class="indent03">}</span><br><br>
+            <span class="indent03">function form_errors($errors=array()) {</span><br>           
+            <span class="indent04">$output = "";</span><br>            
+            <span class="indent04">if (!empty($errors)) {</span><br>
+            <span class="indent05">$output .= "&lt;div class=\"error\"&gt;";</span><br>
+            <span class="indent05">$output .= "Please fix the following errors:";</span><br>
+            <span class="indent05">$output .= "&lt;ul&gt;";</span><br>
+            <span class="indent05">foreach ($errors as $key => $error) {</span><br>
+            <span class="indent06">$output .= "&lt;li&gt;{$error}&lt;/li&gt;";</span><br>
+            <span class="indent05">}</span><br>
+            <span class="indent05">$output .= "&lt;/ul&gt;";</span><br>
+            <span class="indent05">$output .= "&lt;/div&gt;";</span><br>
+            <span class="indent04">}</span><br>
+            <span class="indent04">return $output;</span><br>
+            <span class="indent03">}</span><br><br>
+            <span class="indent03">echo form_errors($errors);<br>
             </span>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">?&gt; </span><br><br>            
-			&emsp;<code><b> result:</b> </code>';
-            echo '<div style=\'margin-left:30px;\'><code><pre>';
+            <span class="red indent02">?&gt; </span></code><br><br>            
+			<code class="indent01"><b> result:</b> </code>';
+            echo '<div class="px30"><code><pre>';
             echo form_errors($errors);
             echo '</pre></code></div>';
 			

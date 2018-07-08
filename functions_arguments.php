@@ -20,17 +20,17 @@
 			<fieldset>
 			<legend id="legendArguments">Functions: Arguments</legend>
 			<div id="divArguments">
-            &emsp;<code><i>// passing an argument to a function</i></code><br> 
-            &emsp;<code> PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
-            <span class="blue">            
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;function say_hello_to($word) {<br>             
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$return "Hello {$word}!";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;}<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$name = "John Doe";<br>	
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result = say_hello_to($name);<br>                  
+            <code class="indent01"><i>// passing an argument to a function</i></code><br> 
+            <code class="indent01">PHP Code:<br> 
+            <span class="red indent02">&lt;?php</span><br>
+            <span class="blue indent03">function say_hello_to($word) {<br>             
+            <span class="indent04">$return "Hello {$word}!";</span><br>
+            <span class="indent03">}</span><br>
+            <span class="indent03">$name = "John Doe";</span><br>	
+            <span class="indent03">$result = say_hello_to($name);</span><br>                  
             </span>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">?&gt;</span></code><br>
-			&emsp;<code> <b>result:</b> </code>';
+            <span class="red indent02">?&gt;</span></code><br>
+			<code class="indent01"><b>result:</b> </code>';
             echo '<code>' . $result . '</code><br><br>';
             
             function better_hello($greeting, $target, $punct) {
@@ -42,16 +42,17 @@
 			$result3 = better_hello("Greetings", $name, null);
 			
             echo '	 
-            &emsp;<code><i>// passing multiple arguments to a function</i></code><br> 
-            &emsp;<code> PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> function better_hello($greeting, $target, $punct) {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;return $greeting . " " . $target . $punct;<br>             
-            &emsp;&emsp;&emsp;&emsp;&emsp; }<br>  
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> $result1 = better_hello("Hello", $name, "!");<br></span>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> $result2 = better_hello("Greetings", $name, "!!!");<br></span>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> $result3 = better_hello("Greetings", $name, null);<br></span>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">?&gt;</span></code><br>
-			&emsp;<code><b> result:</b> </code><br>';
+            <code class="indent01"><i>// passing multiple arguments to a function</i></code><br> 
+            <code class="indent01">PHP Code:<br>
+            <span class="red indent02">&lt;?php</span><br>
+            <span class="blue indent03">function better_hello($greeting, $target, $punct) {<br>
+            <span class="indent04">return $greeting . " " . $target . $punct;</span><br> 
+            <span class="indent03">}</span><br>  
+            <span class="indent03"> $result1 = better_hello("Hello", $name, "!");</span><br>
+            <span class="indent03"> $result2 = better_hello("Greetings", $name, "!!!");</span><br>
+            <span class="indent03"> $result3 = better_hello("Greetings", $name, null);</span><br>
+            <span class="red indent02">?&gt;</span></code><br>
+			<code class="indent01"><b> result:</b> </code><br>';
             echo '<code>' . $result1 . $result2 . $result3 . '</code><br>';  
             
 			echo '</div></fieldset>';

@@ -24,37 +24,37 @@
 			<fieldset>
 			<legend id="legendFalsePositives">Problems with Validation Logic</legend>
 			<div id="divFalsePositives">
-            &emsp;<code><i>// false positives - problems with validation logic</i></code><br>              
-            &emsp;<code>PHP Code:<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<code><i>// check for equality: ==</i></code><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php </span><br>            
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue">function is_equal($value1, $value2) {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$output = "{$value1} == {$value2} returns ";<br>           
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;if($value1 == $value2) {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$output .= "true";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;} else {<br> 
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$output .= "false";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;}<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;return $output;<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;}<br><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;echo is_equal(0, false)<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;echo is_equal(4, true)<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;echo is_equal(0, null)<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;echo is_equal(0, "0")<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;echo is_equal(0, "")<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;echo is_equal(0, "a")<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;echo is_equal("1", "01")<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;echo is_equal("", null)<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;echo is_equal(3, "3 dogs")<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;echo is_equal(100, "1e2")<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;echo is_equal(100, 100.00)<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;echo is_equal("abc", true)<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;echo is_equal("123", "   123")<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;echo is_equal("123", "+0123")<br>
+            <code class="indent01"><i>// false positives - problems with validation logic</i></code><br>              
+            <code class="indent01">PHP Code:<br>
+            <code class="indent02"><i>// check for equality: ==</i></code><br>
+            <span class="red indent02">&lt;?php </span><br>            
+            <span class="blue indent03">function is_equal($value1, $value2) {<br>
+            <span class="indent04">$output = "{$value1} == {$value2} returns ";</span><br> 
+            <span class="indent04">if($value1 == $value2) {</span><br>
+            <span class="indent05">$output .= "true";</span><br>
+            <span class="indent04">} else {</span><br> 
+            <span class="indent05">$output .= "false";</span><br>
+            <span class="indent04">}<span><br>
+            <span class="indent04">return $output;</span><br>
+            <span class="indent03">}</span><br><br>
+            <span class="indent03">echo is_equal(0, false)</span><br>
+            <span class="indent03">echo is_equal(4, true)</span><br>
+            <span class="indent03">echo is_equal(0, null)</span><br>
+            <span class="indent03">echo is_equal(0, "0")</span><br>
+            <span class="indent03">echo is_equal(0, "")</span><br>
+            <span class="indent03">echo is_equal(0, "a")</span><br>
+            <span class="indent03">echo is_equal("1", "01")</span><br>
+            <span class="indent03">echo is_equal("", null)</span><br>
+            <span class="indent03">echo is_equal(3, "3 dogs")</span><br>
+            <span class="indent03">echo is_equal(100, "1e2")</span><br>
+            <span class="indent03">echo is_equal(100, 100.00)</span><br>
+            <span class="indent03">echo is_equal("abc", true)</span><br>
+            <span class="indent03">echo is_equal("123", "   123")</span><br>
+            <span class="indent03">echo is_equal("123", "+0123")</span><br>
             </span>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">?&gt; </span><br><br>            
-			&emsp;<code><b> result:</b> </code>';
-            echo '<div style=\'margin-left:30px;\'><code><pre>';
+            <span class="red indent02">?&gt; </span><br><br>            
+			<code class="indent01"><b> result:</b> </code>';
+            echo '<div class="px30"><code><pre>';
             echo 'is_equal(0, false): ' . is_equal(0, false) . '<br>';
 			echo 'is_equal(4, true): ' . is_equal(4, true) . '<br>';
 			echo 'is_equal(0, null): ' . is_equal(0, null) . '<br>';
@@ -82,35 +82,35 @@
             }
             
             echo '
-            &emsp;&emsp;&emsp;&emsp;&emsp;<code><i>// check for exactness: ===</i></code><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php </span><br>            
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue">function is_exact($value1, $value2) {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$output = "{$value1} === {$value2} returns  ";<br>           
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;if($value1 === $value2) {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$output .= "true";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;} else {<br> 
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$output .= "false";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;}<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;return $output;<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;}<br><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;echo is_exact(0, false)<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;echo is_exact(4, true)<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;echo is_exact(0, null)<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;echo is_exact(0, "0")<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;echo is_exact(0, "")<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;echo is_exact(0, "a")<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;echo is_exact("1", "01")<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;echo is_exact("", null)<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;echo is_exact(3, "3 dogs")<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;echo is_exact(100, "1e2")<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;echo is_exact(100, 100.00)<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;echo is_exact("abc", true)<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;echo is_exact("123", "   123")<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;echo is_exact("123", "+0123")<br>
+            <code class="indent02"><i>// check for exactness: ===</i></code><br>
+            <span class="red indent02">&lt;?php </span><br>            
+            <span class="blue indent03">function is_exact($value1, $value2) {<br>
+            <span class="indent04">$output = "{$value1} === {$value2} returns  ";</span><br>
+            <span class="indent04">if($value1 === $value2) {</span><br>
+            <span class="indent05">$output .= "true";<br>
+            <span class="indent04">} else {</span><br> 
+            <span class="indent05">$output .= "false";</span><br>
+            <span class="indent04">}</span><br>
+            <span class="indent04">return $output;</span><br>
+            <span class="indent03">}</span><br><br>
+            <span class="indent03">echo is_exact(0, false)</span><br>
+            <span class="indent03">echo is_exact(4, true)</span><br>
+            <span class="indent03">echo is_exact(0, null)</span><br>
+            <span class="indent03">echo is_exact(0, "0")</span><br>
+            <span class="indent03">echo is_exact(0, "")</span><br>
+            <span class="indent03">echo is_exact(0, "a")</span><br>
+            <span class="indent03">echo is_exact("1", "01")</span><br>
+            <span class="indent03">echo is_exact("", null)</span><br>
+            <span class="indent03">echo is_exact(3, "3 dogs")</span><br>
+            <span class="indent03">echo is_exact(100, "1e2")</span><br>
+            <span class="indent03">echo is_exact(100, 100.00)</span><br>
+            <span class="indent03">echo is_exact("abc", true)</span><br>
+            <span class="indent03">echo is_exact("123", "   123")</span><br>
+            <span class="indent03">echo is_exact("123", "+0123")</span><br>
             </span>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">?&gt; </span><br><br>            
-			&emsp;<code><b> result:</b> </code>';
-            echo '<div style=\'margin-left:30px;\'><code><pre>';
+            <span class="red indent02">?&gt; </span><br><br>            
+			<code class="indent01"><b> result:</b> </code>';
+            echo '<div class="px30"><code><pre>';
             echo 'is_exact(0, false): ' . is_exact(0, false) . '<br>';
 			echo 'is_exact(4, true): ' . is_exact(4, true) . '<br>';
 			echo 'is_exact(0, null): ' . is_exact(0, null) . '<br>';

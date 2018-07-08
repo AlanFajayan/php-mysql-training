@@ -24,40 +24,41 @@
 			<fieldset>
 			<legend id="legendLogical">Logical Expressions</legend>
 			<div id="divLogical">
-			&emsp;<code><i>// use of if, else, & elseif</i></code><br>
-            &emsp;<code>$a = 3;</code><br>
-            &emsp;<code>$b = 4;</code><br>					
-            &emsp;<code>PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> if ($a > $b) {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result = "a is larger than b";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp; } elseif ($a < $b) {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result = "a is smaller than b";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp; } else {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result = "a is equal to b";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp; }
-            </span>
-            <br>&emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">?&gt;</span></code><br>
-			&emsp;<code><b>result:</b> </code>';
+			<code class="indent01"><i>// use of if, else, & elseif</i></code><br>
+            <code class="indent01">$a = 3;</code><br>
+            <code class="indent01">$b = 4;</code><br>					
+			<code class="indent01">PHP Code:<br> 
+			<span class="red indent02">&lt;?php</span><br>
+            <span class="blue indent03"> if ($a > $b) {<br>
+            <span class="indent04">$result = "a is larger than b";</span><br>
+            <span class="indent03"> } elseif ($a < $b) </span>{<br>
+			<span class="indent04">$result = "a is smaller than b";</span><br>
+            <span class="indent03"> } else {</span><br>
+			<span class="indent04">$result = "a is equal to b";</span><br>
+			<span class="indent03"> }</span>
+			</span><br>
+			<span class="red indent02">?&gt;</span></code><br>
+			<code class="indent01"><b>result:</b> </code>';
             echo '<code>' . $result . '</code><br><br>';
             
             $new_user = true;
 			if ($new_user) {
-				$result1 = "<h1 style='margin-left:20px;'>Welcome!</h1>";
-				$result1 = $result1 . "<p style='margin-left:20px;'>We are glad you decided to join us.</p>";
+				$result1 = "<h1 class=\"px20\">Welcome!</h1>";
+				$result1 = $result1 . "<p class=\"px20\">We are glad you decided to join us.</p>";
 			}
             
             echo '			
-			&emsp;<code><i>// only welcome new users</i></code><br>
-            &emsp;<code>$new_user = true;</code><br>            					
-            &emsp;<code>PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="blue"> if ($new_user) {<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result1 = ';
+			<code class="indent01"><i>// only welcome new users</i></code><br>
+            <code class="indent01">$new_user = true;</code><br>            					
+            <code class="indent01">PHP Code:<br> <span class="red indent02">&lt;?php</span><br>
+            <span class="blue indent03"> if ($new_user) {<br>
+			<span class="indent04">$result1 = ';
             echo htmlentities("<h1>Welcome!</h1>");
-            echo '<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$result1 = $result1 . ';
+            echo '<br><span class="indent04">$result1 = $result1 . ';
             echo htmlentities("<p>We are glad you decided to join us.</p>");
-            echo '<br>&emsp;&emsp;&emsp;&emsp;&emsp; }</span>
-            <br>&emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">?&gt;</span></code><br>
-			&emsp;<code><b>result:</b> </code>';
+            echo '<br><span class="indent03"> }</span>
+            <br><span class="red indent02">?&gt;</span></code><br>
+			<code class="indent01"><b>result:</b> </code>';
             echo '<code>' . $result1 . '</code><br><br>';
 			
 			echo '</div></fieldset>';

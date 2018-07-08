@@ -15,28 +15,28 @@
 			<fieldset>
 			<legend id="legendHtml">HTML Encoding</legend>
 			<div id="divHtml">
-            &emsp;<code><i>// htmlspecialchars</i></code><br> 
-            &emsp;<code> PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
-            <span class="blue">            
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$linktext = "' . htmlspecialchars('<Click>') . ' & learn more";<br>             
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;echo htmlspecialchars($linktext);<br>
+            <code class="indent01"><i>// htmlspecialchars</i></code><br> 
+            <code class="indent01">PHP Code:<br>
+            <span class="red indent02">&lt;?php</span><br>
+            <span class="blue indent03">$linktext = "' . htmlspecialchars('<Click>') . ' & learn more";<br>             
+            <span class="indent03">echo htmlspecialchars($linktext);</span><br>
             </span>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">?&gt;</span></code><br>
-			&emsp;<code> <b>result:</b> </code>';
-            echo '<code><div style=\'margin-left:30px;\'>' . htmlspecialchars($linktext) . '</div></code><br>';
+            <span class="red indent02">?&gt;</span></code><br>
+			<code class="indent01"><b>result:</b> </code>';
+            echo '<code><div class="px30">' . htmlspecialchars($linktext) . '</div></code><br>';
             
             $text = "™£•“—é";            
             
             echo '			
-            &emsp;<code><i>// htmlentities</i></code><br> 
-            &emsp;<code> PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
-            <span class="blue">            
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$text = "™£•“—é";<br>             
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;echo htmlentities($text);<br> 
+            <code class="indent01"><i>// htmlentities</i></code><br> 
+            <code class="indent01">PHP Code:<br>
+            <span class="red indent02">&lt;?php</span><br>
+            <span class="blue indent03">$text = "™£•“—é";<br>             
+            <span class="indent03">echo htmlentities($text);</span><br> 
             </span>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">?&gt;</span></code><br>
-			&emsp;<code> <b>result:</b> </code><br>';
-            echo '<code><div style=\'margin-left:30px;\'>' . htmlentities($text) . '</div></code><br>';
+            <span class="red indent02">?&gt;</span></code><br>
+			<code class="indent01"><b>result:</b> </code><br>';
+            echo '<code><div class="px30">' . htmlentities($text) . '</div></code><br>';
             
             $url_page = "php/created/page/url.php";
             $param1 = "This is a string with < >";
@@ -55,24 +55,24 @@
             */
 
             echo '			
-            &emsp;<code><i>// what to use when</i></code><br> 
-            &emsp;<code> PHP Code:<br> &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">&lt;?php</span><br>
-            <span class="blue">            
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$url_page = "php/created/page/url.php";<br> 
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$param1 = "This is a string with < >";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$param2 = "&#?*$[]+ are bad characters";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$linktext1 = "<Click> & learn more";<br><br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$url = "http://localhost/";<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$url .= rawurlencode($url_page);<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$url .= "?" . "param1=" . urlencode($param1);<br>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$url .= "&" . "param2=" . urlencode($param2);<br><br>            
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;echo \'href: \' . htmlspecialchars($url);<br> 
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;echo \'text: \' . htmlspecialchars($linktext1);<br>
+            <code class="indent01"><i>// what to use when</i></code><br> 
+            <code class="indent01">PHP Code:<br>
+            <span class="red indent02">&lt;?php</span><br>
+            <span class="blue indent03">$url_page = "php/created/page/url.php";<br> 
+            <span class="indent03">$param1 = "This is a string with < >";</span><br>
+            <span class="indent03">$param2 = "&#?*$[]+ are bad characters";</span><br>
+            <span class="indent03">$linktext1 = "<Click> & learn more";</span><br><br>
+            <span class="indent03">$url = "http://localhost/";</span><br>
+            <span class="indent03">$url .= rawurlencode($url_page);</span><br>
+            <span class="indent03">$url .= "?" . "param1=" . urlencode($param1);</span><br>
+            <span class="indent03">$url .= "&" . "param2=" . urlencode($param2);</span><br><br> 
+            <span class="indent03">echo \'href: \' . htmlspecialchars($url);</span><br> 
+            <span class="indent03">echo \'text: \' . htmlspecialchars($linktext1);</span><br>
             </span>
-            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="red">?&gt;</span></code><br>
-			&emsp;<code> <b>result:</b> </code><br>';
-            echo '<code><div style=\'margin-left:30px;\'>href: ' . htmlspecialchars($url) . '</div>
-            <div style=\'margin-left:30px;\'>text: ' . htmlspecialchars($linktext1) . '</div>
+            <span class="red indent02">?&gt;</span></code><br>
+			<code class="indent01"><b>result:</b> </code><br>';
+            echo '<code><div class="px30">href: ' . htmlspecialchars($url) . '</div>
+            <div class="px30">text: ' . htmlspecialchars($linktext1) . '</div>
             </code><br>';
 
             echo '</div></fieldset>';
